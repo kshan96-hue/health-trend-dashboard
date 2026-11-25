@@ -303,7 +303,7 @@ td.nm{font-weight:600;color:var(--ink)}
 .hist-chip{border:1px solid var(--line);background:#fff;border-radius:8px;padding:5px 9px;font-size:12px;font-weight:700;color:#334155;cursor:pointer;font-family:inherit}
 .hist-chip:hover{border-color:#99f6e4}
 .hist-chip.on{background:#ccfbf1;border-color:#5eead4;color:#0f766e}
-.hist-grid{display:grid;grid-template-columns:1.22fr .78fr;gap:14px}
+.hist-grid{display:grid;grid-template-columns:1.22fr .78fr;gap:14px;align-items:start}
 .hist-kpi{display:grid;grid-template-columns:1fr auto auto;gap:6px 10px;align-items:center;font-size:12.5px;padding:6px 0;border-bottom:1px dashed var(--line)}
 .hist-kpi:last-child{border-bottom:0}
 .hist-kpi .nm{color:var(--ink2);font-weight:600}
@@ -843,11 +843,13 @@ addEventListener("unhandledrejection", function (e) {
         var cls = diff > 0 ? "up" : (diff < 0 ? "down" : "flat");
         var sign = diff > 0 ? "▲" : (diff < 0 ? "▼" : "–");
         var abs = Math.abs(diff);
-        var txt = r.unit === "%" ? abs.toFixed(1) + "p" : (abs % 1 === 0 ? abs : abs.toFixed(1));
+        var txt = r.unit === "%" ? abs.toFixed(1) + "p"
+          : abs.toLocaleString("ko-KR", { maximumFractionDigits: 1 });
         dHtml = '<span class="d ' + cls + '">' + sign + " " + txt + "</span>";
       }
-      return '<div class="hist-kpi"><span class="nm">' + r.label + '</span><span class="v">' + c +
-        '<small style="color:#94a3b8;font-weight:600"> ' + r.unit + "</small></span>" + dHtml + "</div>";
+      var cTxt = (typeof c === "number") ? c.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) : c;
+      return '<div class="hist-kpi"><span class="nm">' + r.label + '</span><span class="v">' + cTxt +
+        '<small style="color:#94a3b8;font-weight:600">' + r.unit + "</small></span>" + dHtml + "</div>";
     }).join("");
 
     var series = reps.map(function (r) { return r.trend && r.trend.kpi ? r.trend.kpi.purchaseRate : null; }).filter(function (v) { return v !== null; });
