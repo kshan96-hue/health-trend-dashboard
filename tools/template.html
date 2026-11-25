@@ -470,6 +470,16 @@ footer h3{font-size:13px;font-weight:800;letter-spacing:.04em;color:var(--muted)
 
 <script id="embedded-data" type="application/json">__EMBEDDED__</script>
 <script>
+/* 런타임 오류 수집(화면에는 표시하지 않음) — 배포 후 확인용 */
+window.__APP_ERRORS = [];
+addEventListener("error", function (e) {
+  if (e && (e.error || e.message)) window.__APP_ERRORS.push(String((e.error && e.error.stack) || e.message));
+});
+addEventListener("unhandledrejection", function (e) {
+  window.__APP_ERRORS.push("unhandledrejection: " + String(e.reason));
+});
+</script>
+<script>
 (function () {
   "use strict";
 
@@ -1135,6 +1145,9 @@ footer h3{font-size:13px;font-weight:800;letter-spacing:.04em;color:var(--muted)
     if (VIEWS.every(function (v) { return v.id !== state.view; })) state.view = "summary";
     if (!state.period || PERIODS.indexOf(state.period) === -1) state.period = "daily";
     render();
+    if (/(?:^|[?&])debug=1(?:&|$)/.test(location.search)) {
+      window.__dashDebug = { state: state, render: render };
+    }
   }
 
   init();
