@@ -541,14 +541,23 @@ addEventListener("unhandledrejection", function (e) {
     if (period === "weekly") return "./data/weekly/" + key + ".json";
     return "./data/monthly/" + key + ".json";
   }
+  function cacheKey(period, key) { return period + "|" + key; }
+  function getReport(period, key) {
+    return key ? state.all[cacheKey(period, key)] : undefined;
+  }
   function loadReport(period, key) {
     if (!key) return Promise.resolve(null);
-    if (state.all[key]) return Promise.resolve(state.all[key]);
+    var ck = cacheKey(period, key);
+    if (state.all[ck]) return Promise.resolve(state.all[ck]);
     return fetchJSON(reportPath(period, key)).then(function (d) {
-      state.all[key] = d;
+      state.all[ck] = d;
       return d;
     }).catch(function () {
-      if (EMB.reports && EMB.reports[key]) { state.all[key] = EMB.reports[key]; return state.all[key]; }
+      // 내장 JSON은 일일 리포트의 file:// 대체용으로만 쓴다.
+      if (period === "daily" && EMB.reports && EMB.reports[key]) {
+        state.all[ck] = EMB.reports[key];
+        return state.all[ck];
+      }
       return null;
     });
   }
@@ -728,7 +737,7 @@ addEventListener("unhandledrejection", function (e) {
 
   function blockAgecols(b) {
     var max = Math.max.apply(null, b.items.map(function (x) { return x.n; })) || 1;
-    return '<div class="card"><h3>' + b.title + "</h3>" + (b.desc ? '<p class="cap">' + b.desc + "</p>" : "") +
+    return '<div class="card">' + (b.desc ? '<p class="cap">' + b.desc + "</p>" : "") +
       '<div class="cols">' + b.items.map(function (x) {
         var h = Math.max(3, Math.round(x.n / max * 150));
         var cls = x.n === max ? " top" : (x.n >= 30 ? " mid" : "");
@@ -810,7 +819,7 @@ addEventListener("unhandledrejection", function (e) {
 
   function renderHistory(block) {
     var dates = listFor("daily");
-    var reps = dates.map(function (d) { return state.all[d]; }).filter(Boolean);
+    var reps = dates.map(function (d) { return getReport("daily", d); }).filter(Boolean);
     var activeDate = state.date;
 
     if (reps.length < 2) {
@@ -1021,7 +1030,7 @@ addEventListener("unhandledrejection", function (e) {
   function render() {
     renderBar();
     var isDaily = state.period === "daily";
-    var rep = isDaily ? state.all[state.date] : state.all[state.date];
+    var rep = getReport(state.period, state.date);
     state.current = rep || null;
 
     if (rep && rep.views) {
@@ -1031,14 +1040,14 @@ addEventListener("unhandledrejection", function (e) {
       renderPanel(rep);
     } else if (isDaily) {
       renderViewTabs(false);
-      renderHeader(state.all[latestDate("daily")] || null);
+      renderHeader(getReport("daily", latestDate("daily")) || null);
       $("reportView").innerHTML = '<div class="loaderr">리포트 데이터를 불러오지 못했습니다. 잠시 후 새로고침하거나 ' +
         '<a href="./data/manifest.json">data/manifest.json</a>을 확인해 주세요.</div>';
     } else {
       renderViewTabs(false);
-      renderHeader(state.all[latestDate("daily")] || null);
+      renderHeader(getReport("daily", latestDate("daily")) || null);
       renderPeriodHeader(state.period);
-      renderFooter(state.all[latestDate("daily")] || null);
+      renderFooter(getReport("daily", latestDate("daily")) || null);
       renderPlaceholder(state.period);
     }
     bindNav();
@@ -1129,16 +1138,14 @@ addEventListener("unhandledrejection", function (e) {
     var dates = listFor("daily").slice(-60);
     await Promise.all(dates.map(function (d) { return loadReport("daily", d); }));
 
-    var latest = latestDate("daily");
     if (hash && hash.date) state.date = hash.date;
     if (!state.date || listFor(state.period).indexOf(state.date) === -1) {
       state.date = latestDate(state.period);
     }
-    if (!state.date) state.date = latest;
-    if (!state.date) state.period = "daily";
+    // 주간·월간에 아직 데이터가 없으면 일일 날짜로 대체하지 않는다(기간 혼동 방지).
+    if (!state.date && state.period === "daily") state.date = latestDate("daily");
 
-    if (state.period !== "daily" && state.date) await loadReport(state.period, state.date);
-    if (state.period === "daily" && state.date) await loadReport("daily", state.date);
+    if (state.date) await loadReport(state.period, state.date);
     if (VIEWS.every(function (v) { return v.id !== state.view; })) state.view = "summary";
     if (!state.period || PERIODS.indexOf(state.period) === -1) state.period = "daily";
     render();
