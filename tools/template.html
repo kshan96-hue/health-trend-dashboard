@@ -504,13 +504,10 @@ addEventListener("unhandledrejection", function (e) {
     date: null,
     view: "summary",
     manifest: (EMB.manifest && EMB.manifest.daily) ? EMB.manifest : { daily: [], weekly: [], monthly: [] },
-    all: {},          // date/key -> report
+    all: {},          // date/key -> report (fetched; embedded JSON only as file:// fallback)
     current: null,
     offline: false
   };
-  if (EMB.reports) {
-    Object.keys(EMB.reports).forEach(function (k) { state.all[k] = EMB.reports[k]; });
-  }
 
   function $(id) { return document.getElementById(id); }
   function weekdayOf(dstr) {
