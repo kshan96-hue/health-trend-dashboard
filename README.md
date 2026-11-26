@@ -39,6 +39,14 @@ data/
 3. `python3 tools/build.py` — `tools/template.html`에 최신 데이터를 심어 `index.html` 생성.
 4. `git push origin main` 및 `git push origin main:gh-pages` — GitHub Pages 소스는 `gh-pages` 브랜치 `/(root)`.
 
+## English Briefing (듣기 + 스크립트)
+
+- 일일 리포트 JSON에 `englishBriefing` 필드를 넣으면 대시보드 상단(탭 바 아래)에 🇺🇸 English Briefing 패널이 나타납니다. 없는 날짜(예: 2026-11-25)는 패널이 숨겨집니다.
+- 형식: `{ "title": "...", "duration": "14문장 · 약 2분 (1.0x 기준)", "sentences": ["...", "..."] }`
+- 재생은 브라우저 내장 Web Speech API(`window.speechSynthesis`)를 씁니다. 영어 음성(en-US 우선, 없으면 en-*) 자동 선택, ▶ Play / ⏸ Pause(Resume) / ⏹ Stop, 재생 속도 0.8x·0.9x·1.0x·1.15x, 문장을 누르면 그 문장부터 재생, 읽는 문장이 하이라이트됩니다.
+- 음성 합성을 지원하지 않는 브라우저에서는 안내 문구와 스크립트만 표시합니다. 날짜·주기·탭을 바꾸면 `speechSynthesis.cancel()`로 재생이 정지됩니다.
+- 문장 스크립트는 `tools/add_english_briefing.py`에 모아 두고 `python3 tools/add_english_briefing.py <YYYY-MM-DD>`로 JSON에 끼워 넣습니다(나머지 필드는 그대로 유지).
+
 ## 내용 기준
 
 - 2026-11-25 1회차 브리핑 데이터 기준. 시장·규제·채널·제형·검색·커머스 랭킹을 한 장에 정리.

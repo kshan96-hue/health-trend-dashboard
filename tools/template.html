@@ -48,6 +48,45 @@ ul{margin:0;padding-left:1.1em}
 code{font-size:.92em;background:#f1f5f9;border-radius:4px;padding:1px 4px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 
+/* ---------- english briefing ---------- */
+.enbrief{background:linear-gradient(180deg,#ecfdf5 0%,#ffffff 100%);border-bottom:1px solid #99f6e4}
+.enbrief .enbrief-in{padding:14px 0 16px}
+.eb-head{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.eb-flag{font-size:19px;line-height:1.25}
+.eb-titles{min-width:0;flex:1 1 240px}
+.eb-head h2{font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.eb-head h2 .eb-k{font-size:10.5px;font-weight:800;letter-spacing:.05em;color:#0f766e;background:#ccfbf1;border-radius:6px;padding:3px 7px;text-transform:uppercase}
+.eb-title{font-size:13px;font-weight:700;color:var(--ink2);margin-top:3px}
+.eb-dur{font-weight:600;color:var(--muted)}
+.eb-ctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px}
+.ebbtn{appearance:none;border:1px solid #0d9488;background:#0d9488;color:#fff;border-radius:10px;padding:7px 14px;font:inherit;font-size:13px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;line-height:1.4;transition:background .12s}
+.ebbtn:hover:not(:disabled){background:#0f766e}
+.ebbtn.ghost{background:#fff;color:#0f766e;border-color:#5eead4}
+.ebbtn.ghost:hover:not(:disabled){background:#f0fdfa}
+.ebbtn:disabled{opacity:.4;cursor:default}
+.ebbtn.eb-toggle{margin-left:auto}
+.ebrates{display:inline-flex;gap:2px;background:#fff;border:1px solid #5eead4;border-radius:10px;padding:2px}
+.ebrates button{appearance:none;border:0;background:transparent;font:inherit;font-size:12.5px;font-weight:800;color:#0f766e;padding:5px 9px;border-radius:8px;cursor:pointer;font-variant-numeric:tabular-nums}
+.ebrates button:hover{background:#f0fdfa}
+.ebrates button[aria-pressed="true"]{background:#0d9488;color:#fff}
+.ebrates button[aria-pressed="true"]:hover{background:#0d9488}
+.eb-note{font-size:11.5px;color:var(--muted);font-weight:600}
+.eb-note.warn{color:var(--amber)}
+.eb-list{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px}
+.eb-list li{display:flex;gap:9px;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;font-size:13.5px;line-height:1.6;color:var(--ink2);transition:background .12s,border-color .12s,box-shadow .12s}
+.eb-list li:hover{border-color:#5eead4;background:#f7fffd}
+.eb-list li .n{flex:0 0 auto;width:20px;color:var(--muted);font-size:11.5px;font-weight:800;font-variant-numeric:tabular-nums;padding-top:3px}
+.eb-list li.on{border-color:#0d9488;background:#d7fbf3;box-shadow:inset 3px 0 0 #0d9488;color:var(--ink);font-weight:600}
+.eb-list li.on .n{color:#0f766e}
+.eb-list.noaudio li{cursor:default}
+.eb-list.noaudio li:hover{border-color:var(--line);background:#fff}
+@media (max-width:720px){
+  .eb-list li{font-size:13px;padding:8px 10px}
+  .eb-ctrl{gap:6px}
+  .ebbtn{padding:7px 12px;font-size:12.5px}
+  .eb-ctrl .eb-note{flex:1 1 100%}
+}
+
 /* ---------- header ---------- */
 header.top{
   background:
@@ -449,6 +488,8 @@ footer h3{font-size:13px;font-weight:800;letter-spacing:.04em;color:var(--muted)
     <nav class="tabs" id="viewTabs" role="tablist" aria-label="대시보드 섹션"></nav>
   </div>
 </div>
+
+<section class="enbrief" id="enBrief" aria-labelledby="ebH" hidden></section>
 
 <main class="wrap">
   <div id="reportView"></div>
@@ -1025,6 +1066,251 @@ addEventListener("unhandledrejection", function (e) {
     });
   }
 
+  /* ---------------- english briefing (Web Speech API) ---------------- */
+  var EB_RATES = [{ v: 0.8, l: "0.8x" }, { v: 0.9, l: "0.9x" }, { v: 1, l: "1.0x" }, { v: 1.15, l: "1.15x" }];
+  var EB = {
+    supported: !!(window.speechSynthesis && window.SpeechSynthesisUtterance),
+    data: null, date: null, rate: 1, idx: 0,
+    playing: false, paused: false, gen: 0, utt: null, voice: null, voiceBound: false,
+    manualPause: false
+  };
+
+  try {
+    addEventListener("pagehide", function () { try { window.speechSynthesis.cancel(); } catch (e) {} });
+  } catch (e) {}
+
+  function ebEsc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function ebPickVoice() {
+    var all = [];
+    try { all = window.speechSynthesis.getVoices() || []; } catch (e) { all = []; }
+    var en = all.filter(function (v) { return /^en([-_]|$)/i.test(v.lang || ""); });
+    if (!en.length) return null;
+    var us = en.filter(function (v) { return /^en[-_]US/i.test(v.lang || ""); });
+    var pool = us.length ? us : en;
+    var pref = ["Google US English", "Samantha", "Ava", "Allison", "Microsoft Aria", "Microsoft Jenny", "Microsoft Zira", "Microsoft Mark", "Alex", "Daniel"];
+    for (var i = 0; i < pref.length; i++) {
+      for (var j = 0; j < pool.length; j++) {
+        if ((pool[j].name || "").indexOf(pref[i]) !== -1) return pool[j];
+      }
+    }
+    return pool[0];
+  }
+
+  function ebBindVoices() {
+    if (!EB.supported || EB.voiceBound) return;
+    EB.voiceBound = true;
+    EB.voice = ebPickVoice();
+    try {
+      window.speechSynthesis.addEventListener("voiceschanged", function () { EB.voice = ebPickVoice(); });
+    } catch (e) {
+      try { window.speechSynthesis.onvoiceschanged = function () { EB.voice = ebPickVoice(); }; } catch (e2) {}
+    }
+  }
+
+  function ebUpdateUI() {
+    var list = $("ebList");
+    if (list) {
+      var active = (EB.playing || EB.paused) ? EB.idx : -1;
+      Array.prototype.forEach.call(list.children, function (li, i) {
+        if (i === active) { li.classList.add("on"); li.setAttribute("aria-current", "true"); }
+        else { li.classList.remove("on"); li.removeAttribute("aria-current"); }
+      });
+    }
+    var play = $("ebPlay");
+    if (play) {
+      play.innerHTML = EB.playing ? "⏸ Pause" : (EB.paused ? "▶ Resume" : "▶ Play");
+      play.setAttribute("aria-pressed", EB.playing ? "true" : "false");
+    }
+    var stop = $("ebStop");
+    if (stop) stop.disabled = !(EB.playing || EB.paused);
+  }
+
+  function ebSpeakCurrent(gen) {
+    if (gen !== EB.gen) return;
+    var d = EB.data;
+    if (!d) { EB.playing = false; EB.paused = false; ebUpdateUI(); return; }
+    var sents = d.sentences || [];
+    if (EB.idx >= sents.length) {
+      EB.playing = false; EB.paused = false; EB.idx = 0; ebUpdateUI(); return;
+    }
+    var u = new window.SpeechSynthesisUtterance(sents[EB.idx]);
+    u.lang = (EB.voice && EB.voice.lang) || "en-US";
+    if (EB.voice) u.voice = EB.voice;
+    u.rate = EB.rate;
+    u.pitch = 1;
+    u.volume = 1;
+    u.onend = function () {
+      if (gen !== EB.gen) return;
+      EB.idx += 1;
+      ebUpdateUI();
+      ebSpeakCurrent(gen);
+    };
+    u.onerror = function (e) {
+      if (gen !== EB.gen) return;
+      var err = (e && e.error) || "";
+      if (err === "interrupted" || err === "canceled") return;
+      EB.playing = false; EB.paused = false; ebUpdateUI();
+    };
+    EB.utt = u;
+    try { window.speechSynthesis.speak(u); } catch (e) {
+      EB.playing = false; EB.paused = false; ebUpdateUI();
+    }
+    ebUpdateUI();
+  }
+
+  function ebSpeakFrom(start) {
+    if (!EB.supported || !EB.data) return;
+    var sents = EB.data.sentences || [];
+    if (!sents.length) return;
+    try { window.speechSynthesis.cancel(); } catch (e) {}
+    EB.gen += 1;
+    var s = parseInt(start, 10);
+    if (isNaN(s) || s < 0) s = 0;
+    if (s >= sents.length) s = 0;
+    EB.idx = s;
+    EB.playing = true;
+    EB.paused = false;
+    EB.manualPause = false;
+    ebSpeakCurrent(EB.gen);
+  }
+
+  function ebPause() {
+    if (!EB.supported || !EB.playing) return;
+    EB.playing = false;
+    EB.paused = true;
+    EB.manualPause = true;
+    try { window.speechSynthesis.pause(); } catch (e) {}
+    ebUpdateUI();
+    // Android Chrome 등 pause()가 동작하지 않는 환경: 현재 문장까지만 멈춘 것으로 처리
+    setTimeout(function () {
+      if (!EB.manualPause || !EB.paused) return;
+      var stillRunning = false;
+      try { stillRunning = window.speechSynthesis.speaking && !window.speechSynthesis.paused; } catch (e) { stillRunning = false; }
+      if (stillRunning) {
+        EB.gen += 1;
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+        ebUpdateUI();
+      }
+    }, 400);
+  }
+
+  function ebResume() {
+    if (!EB.supported) return;
+    EB.manualPause = false;
+    if (EB.paused) {
+      var wasPaused = false;
+      try { wasPaused = window.speechSynthesis.paused; } catch (e) { wasPaused = false; }
+      if (wasPaused) {
+        EB.paused = false; EB.playing = true;
+        try { window.speechSynthesis.resume(); } catch (e) { ebSpeakFrom(EB.idx); }
+        ebUpdateUI();
+      } else {
+        ebSpeakFrom(EB.idx);
+      }
+      return;
+    }
+    ebSpeakFrom(EB.idx);
+  }
+
+  function ebStop() {
+    EB.manualPause = false;
+    EB.gen += 1;
+    EB.playing = false;
+    EB.paused = false;
+    EB.idx = 0;
+    if (EB.supported) { try { window.speechSynthesis.cancel(); } catch (e) {} }
+    ebUpdateUI();
+  }
+
+  function ebSetRate(v) {
+    EB.rate = v;
+    var box = $("enBrief");
+    if (box) {
+      Array.prototype.forEach.call(box.querySelectorAll(".ebrates button"), function (b) {
+        b.setAttribute("aria-pressed", Math.abs(parseFloat(b.getAttribute("data-rate")) - v) < 0.001 ? "true" : "false");
+      });
+    }
+    if (EB.playing) ebSpeakFrom(EB.idx);
+  }
+
+  function renderEnglish(rep) {
+    var box = $("enBrief");
+    if (!box) return;
+    var d = (rep && rep.englishBriefing && (rep.englishBriefing.sentences || []).length) ? rep.englishBriefing : null;
+    if (!d) {
+      if (EB.data) ebStop();
+      EB.data = null; EB.date = null;
+      box.hidden = true;
+      box.innerHTML = "";
+      return;
+    }
+    if (EB.date === rep.date && box.innerHTML) return; // 같은 날짜: 재생 상태 유지
+    ebStop();
+    EB.data = d; EB.date = rep.date;
+    ebBindVoices();
+
+    var sents = d.sentences || [];
+    var sup = EB.supported;
+    var ctrl = sup
+      ? '<button type="button" class="ebbtn" id="ebPlay" aria-pressed="false">▶ Play</button>' +
+        '<button type="button" class="ebbtn ghost" id="ebStop" disabled>⏹ Stop</button>' +
+        '<div class="ebrates" role="group" aria-label="재생 속도">' + EB_RATES.map(function (r) {
+          return '<button type="button" data-rate="' + r.v + '" aria-pressed="' + (Math.abs(EB.rate - r.v) < 0.001 ? "true" : "false") + '">' + r.l + "</button>";
+        }).join("") + "</div>" +
+        '<span class="eb-note">문장을 누르면 그 문장부터 재생 · 영어 음성 자동 선택</span>'
+      : '<span class="eb-note warn">이 브라우저는 음성 재생을 지원하지 않습니다. 아래 스크립트는 그대로 읽으실 수 있습니다.</span>';
+
+    box.innerHTML =
+      '<div class="wrap"><div class="enbrief-in">' +
+        '<div class="eb-head">' +
+          '<span class="eb-flag" aria-hidden="true">🇺🇸</span>' +
+          '<div class="eb-titles">' +
+            '<h2 id="ebH">English Briefing <span class="eb-k">Listen &amp; Read</span></h2>' +
+            '<p class="eb-title">' + ebEsc(d.title || "Health supplement market briefing") +
+              (d.duration ? ' <span class="eb-dur">· ' + ebEsc(d.duration) + "</span>" : "") + "</p>" +
+          "</div>" +
+          '<button type="button" class="ebbtn ghost eb-toggle" id="ebToggle" aria-expanded="true" aria-controls="ebList">접기</button>' +
+        "</div>" +
+        '<div class="eb-ctrl">' + ctrl + "</div>" +
+        '<ol class="eb-list' + (sup ? "" : " noaudio") + '" id="ebList">' +
+          sents.map(function (s, i) {
+            return '<li data-i="' + i + '"><span class="n">' + (i < 9 ? "0" : "") + (i + 1) + '</span><span class="t" lang="en">' + ebEsc(s) + "</span></li>";
+          }).join("") +
+        "</ol>" +
+      "</div></div>";
+
+    box.hidden = false;
+
+    var playBtn = $("ebPlay");
+    if (playBtn) playBtn.addEventListener("click", function () {
+      if (EB.playing) ebPause(); else ebResume();
+    });
+    var stopBtn = $("ebStop");
+    if (stopBtn) stopBtn.addEventListener("click", ebStop);
+    Array.prototype.forEach.call(box.querySelectorAll(".ebrates button"), function (b) {
+      b.addEventListener("click", function () { ebSetRate(parseFloat(b.getAttribute("data-rate"))); });
+    });
+    if (sup) {
+      Array.prototype.forEach.call($("ebList").children, function (li) {
+        li.addEventListener("click", function () { ebSpeakFrom(parseInt(li.getAttribute("data-i"), 10) || 0); });
+      });
+    }
+    var toggle = $("ebToggle");
+    if (toggle) toggle.addEventListener("click", function () {
+      var list = $("ebList");
+      if (!list) return;
+      var hide = !list.hidden;
+      list.hidden = hide;
+      toggle.setAttribute("aria-expanded", hide ? "false" : "true");
+      toggle.textContent = hide ? "스크립트 열기" : "접기";
+    });
+    ebUpdateUI();
+  }
+
   /* ---------------- navigation ---------------- */
   function syncHash() {
     var h = state.period + "/" + (state.date || "") + "/" + state.view;
@@ -1056,11 +1342,13 @@ addEventListener("unhandledrejection", function (e) {
       renderPlaceholder(state.period);
     }
     bindNav();
+    renderEnglish(rep);
     syncHash();
   }
 
   function goDate(d) {
     if (!d) return;
+    ebStop();
     state.date = d;
     loadReport(state.period, d).then(function (r) {
       if (!r && state.period !== "daily") { render(); return; }
@@ -1069,6 +1357,7 @@ addEventListener("unhandledrejection", function (e) {
   }
 
   function switchPeriod(p) {
+    ebStop();
     state.period = p;
     var d = latestDate(p);
     state.date = d || null;
@@ -1086,6 +1375,7 @@ addEventListener("unhandledrejection", function (e) {
     });
     document.querySelectorAll("#viewTabs button[data-view]").forEach(function (b) {
       b.onclick = function () {
+        ebStop();
         state.view = b.getAttribute("data-view");
         renderViewTabs(true);
         var rep = state.current;
