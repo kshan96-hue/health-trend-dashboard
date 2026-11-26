@@ -1073,7 +1073,7 @@ addEventListener("unhandledrejection", function (e) {
     supported: !!(window.speechSynthesis && window.SpeechSynthesisUtterance),
     data: null, date: null, rate: 1, idx: 0,
     playing: false, paused: false, gen: 0, utt: null, voice: null, voiceBound: false,
-    manualPause: false
+    manualPause: false, started: false, startTimer: null, noteDefault: ""
   };
 
   try {
@@ -1136,8 +1136,20 @@ addEventListener("unhandledrejection", function (e) {
     if (stop) stop.disabled = !(EB.playing || EB.paused);
   }
 
+  function ebSetNote(text, warn) {
+    var n = document.querySelector("#enBrief .eb-ctrl .eb-note");
+    if (!n) return;
+    n.textContent = text;
+    if (warn) n.classList.add("warn"); else n.classList.remove("warn");
+  }
+
+  function ebClearStartTimer() {
+    if (EB.startTimer) { clearTimeout(EB.startTimer); EB.startTimer = null; }
+  }
+
   function ebSpeakCurrent(gen) {
     if (gen !== EB.gen) return;
+    ebClearStartTimer();
     var d = EB.data;
     if (!d) { EB.playing = false; EB.paused = false; ebUpdateUI(); return; }
     var sents = d.sentences || [];
@@ -1150,6 +1162,13 @@ addEventListener("unhandledrejection", function (e) {
     u.rate = EB.rate;
     u.pitch = 1;
     u.volume = 1;
+    EB.started = false;
+    u.onstart = function () {
+      if (gen !== EB.gen) return;
+      EB.started = true;
+      ebClearStartTimer();
+      if (EB.noteDefault) ebSetNote(EB.noteDefault, false);
+    };
     u.onend = function () {
       if (gen !== EB.gen) return;
       EB.idx += 1;
@@ -1165,7 +1184,17 @@ addEventListener("unhandledrejection", function (e) {
     EB.utt = u;
     try { window.speechSynthesis.speak(u); } catch (e) {
       EB.playing = false; EB.paused = false; ebUpdateUI();
+      return;
     }
+    // 음성 엔진이 아예 없는 기기(영어 TTS 미설치 등)는 onstart가 오지 않는다 → 안내 후 멈춤
+    EB.startTimer = setTimeout(function () {
+      if (gen !== EB.gen || EB.started || !EB.playing) return;
+      EB.gen += 1;
+      try { window.speechSynthesis.cancel(); } catch (e) {}
+      EB.playing = false; EB.paused = false; EB.idx = 0;
+      ebSetNote("이 기기에서 영어 음성이 시작되지 않았습니다. 설정 > 언어 및 입력 > 텍스트 음성 변환(TTS)에서 영어 음성을 설치해 보세요. 스크립트는 그대로 읽으실 수 있습니다.", true);
+      ebUpdateUI();
+    }, 4000);
     ebUpdateUI();
   }
 
@@ -1229,6 +1258,7 @@ addEventListener("unhandledrejection", function (e) {
     EB.playing = false;
     EB.paused = false;
     EB.idx = 0;
+    ebClearStartTimer();
     if (EB.supported) { try { window.speechSynthesis.cancel(); } catch (e) {} }
     ebUpdateUI();
   }
@@ -1262,13 +1292,15 @@ addEventListener("unhandledrejection", function (e) {
 
     var sents = d.sentences || [];
     var sup = EB.supported;
+    var noteText = "문장을 누르면 그 문장부터 재생 · 영어 음성 자동 선택";
+    EB.noteDefault = noteText;
     var ctrl = sup
       ? '<button type="button" class="ebbtn" id="ebPlay" aria-pressed="false">▶ Play</button>' +
         '<button type="button" class="ebbtn ghost" id="ebStop" disabled>⏹ Stop</button>' +
         '<div class="ebrates" role="group" aria-label="재생 속도">' + EB_RATES.map(function (r) {
           return '<button type="button" data-rate="' + r.v + '" aria-pressed="' + (Math.abs(EB.rate - r.v) < 0.001 ? "true" : "false") + '">' + r.l + "</button>";
         }).join("") + "</div>" +
-        '<span class="eb-note">문장을 누르면 그 문장부터 재생 · 영어 음성 자동 선택</span>'
+        '<span class="eb-note">' + noteText + '</span>'
       : '<span class="eb-note warn">이 브라우저는 음성 재생을 지원하지 않습니다. 아래 스크립트는 그대로 읽으실 수 있습니다.</span>';
 
     box.innerHTML =
