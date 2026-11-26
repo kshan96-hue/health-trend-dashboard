@@ -936,7 +936,9 @@ addEventListener("unhandledrejection", function (e) {
 
   function renderPanel(rep) {
     var views = rep.views || {};
-    if (!views[state.view]) { state.view = "summary"; }
+    var viewReset = false;
+    if (!views[state.view]) { state.view = "summary"; viewReset = true; }
+    if (viewReset) renderViewTabs(true);
     $("reportView").innerHTML = VIEWS.map(function (v) {
       var blocks = views[v.id] || [];
       return '<section class="panel" data-panel="' + v.id + '" role="tabpanel" aria-label="' + v.label + '"' +
