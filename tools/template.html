@@ -81,6 +81,7 @@ code{font-size:.92em;background:#f1f5f9;border-radius:4px;padding:1px 4px}
 .eb-list.noaudio li{cursor:default}
 .eb-list.noaudio li:hover{border-color:var(--line);background:#fff}
 @media (max-width:720px){
+  .eb-list{max-height:44vh;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:2px}
   .eb-list li{font-size:13px;padding:8px 10px}
   .eb-ctrl{gap:6px}
   .ebbtn{padding:7px 12px;font-size:12.5px}
@@ -1119,6 +1120,12 @@ addEventListener("unhandledrejection", function (e) {
         if (i === active) { li.classList.add("on"); li.setAttribute("aria-current", "true"); }
         else { li.classList.remove("on"); li.removeAttribute("aria-current"); }
       });
+      // 모바일에서 리스트가 자체 스크롤될 때만 안쪽으로 따라가게 한다(페이지는 건드리지 않음).
+      if (active >= 0 && list.scrollHeight > list.clientHeight + 4 && list.children[active]) {
+        var lr = list.getBoundingClientRect(), ir = list.children[active].getBoundingClientRect();
+        if (ir.top < lr.top) list.scrollTop -= (lr.top - ir.top) + 8;
+        else if (ir.bottom > lr.bottom) list.scrollTop += (ir.bottom - lr.bottom) + 8;
+      }
     }
     var play = $("ebPlay");
     if (play) {
