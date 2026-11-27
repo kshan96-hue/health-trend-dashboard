@@ -1,0 +1,1396 @@
+{
+ "date": "2026-11-27",
+ "weekday": "금",
+ "edition": "3회차",
+ "generatedAt": "2026-11-27T10:25:00+09:00",
+ "header": {
+  "eyebrow": "2026-11-27 (금) · 3회차 브리핑 · 누적형 리포트",
+  "title": "💊 건강기능식품 시장 트렌드 대시보드",
+  "lede": "어제 &lsquo;미확인&rsquo;으로 남겼던 <b>시행규칙 공포</b>가 확인됐습니다. 11/26 공포·11/27 발표로 AI 가상 전문가 광고에 <b>행정처분 기준</b>이 붙었고, 같은 규칙에 슈링크플레이션 미표시 처분 강화와 알레르기 표시 4종 추가가 함께 들어갔습니다. 원료는 <b>왕느릅나무 근력·근기능 이중기능성</b>, 제품은 <b>구강용해필름·원물 스틱·155mL 병</b>이 새로 확인됐습니다. 확인된 수치만 썼고, 확인하지 못한 값은 &lsquo;미확인&rsquo;입니다.",
+  "badges": [
+   {
+    "tone": "strong",
+    "text": "처분 기준 확정",
+    "sub": "AI 가상 전문가·슈링크"
+   },
+   {
+    "text": "원료 1건",
+    "sub": "왕느릅나무 근력·근기능"
+   },
+   {
+    "text": "신제품 4건",
+    "sub": "11/23~27 확인"
+   },
+   {
+    "text": "쿠팡 상위 10 동일",
+    "sub": "덴프스 -3.3%"
+   },
+   {
+    "text": "아이허브 BF 30%",
+    "sub": "BFCMAPAC30"
+   }
+  ]
+ },
+ "englishBriefing": {
+  "title": "Korea Health Supplement Market Briefing — Friday, November 27, 2026",
+  "duration": "14문장 · 약 2분 (1.0x 기준)",
+  "sentences": [
+   "Good morning. This is your Korea health supplement market briefing for Friday, November 27.",
+   "Four things matter today: the enforcement decree behind yesterday's advertising rule, a new dual-function ingredient, a shift in dosage forms, and a price move on Coupang.",
+   "First, regulation. The Ministry of Food and Drug Safety published the revised enforcement decree for food labeling and advertising yesterday, and announced it this morning.",
+   "That matters because penalties for AI-generated virtual experts recommending products now have an administrative basis, not only a criminal one: a fifteen-day business suspension for manufacturers on the first offense, and seven days for retailers.",
+   "The same decree tightened shrinkflation, so hiding a smaller pack size now brings a fifteen-day product manufacturing suspension from the first offense, where it used to be a correction order.",
+   "Allergen labeling will add sesame, perilla, almond and cashew in 2028, taking the list from twenty-two items to twenty-six.",
+   "Second, ingredients. A domestic royal elm bark extract received individual approval for both strength and muscle function, approval number 2026-35, on the back of a twenty-four-week trial run without resistance training.",
+   "The company says it is the first plant ingredient in Korea to win two muscle-related claims from a single human trial, and it points straight at the senior segment.",
+   "Third, products. Soltis launched a memory product built on a grape and blueberry blend at six hundred milligrams a day.",
+   "Korea Ginseng Corp's Everytime passed two trillion won in cumulative sales since 2012, and it now comes as a liquid stick, a twenty-milliliter shot and an oral dissolving film.",
+   "CJ CheilJedang added a sweet potato stick at seventy calories, sold online first and moving into convenience stores in December.",
+   "And CJ Wellcare brought in Japan's best-selling health drink, Kireto Lemon, a one-hundred-fifty-five milliliter bottle with thirteen hundred fifty milligrams of vitamin C, starting at Olive Young and Costco.",
+   "Fourth, commerce. Coupang's top ten by units sold did not move at all in two days, but Deps cut its probiotic from twenty thousand twenty won to nineteen thousand three hundred fifty.",
+   "On search, NMN returned to twentieth place a day after dropping out, which suggests yesterday's anti-aging shift may have been a one-day window effect rather than a market signal."
+  ]
+ },
+ "views": {
+  "summary": [
+   {
+    "kind": "kpis",
+    "title": "핵심 지표 4",
+    "tag": "KPI",
+    "desc": "규제는 &lsquo;공포&rsquo;로 확정됐고, 시장은 제형과 가격으로 움직였습니다 — 2026-11-27 조사 기준.",
+    "items": [
+     {
+      "label": "① 정책 — 시행규칙 공포",
+      "value": "11/26",
+      "unit": "공포",
+      "delta": "<span class=\"mini-tag mt-amber\">11/27 발표</span>식약처·연합뉴스",
+      "foot": [
+       "AI 가상 전문가 부당광고 <b>행정처분 신설</b> — 어제 &lsquo;공포 미확인&rsquo;에서 확정",
+       "1차 영업정지 15일(제조·유통전문판매) / 7일(판매업)",
+       "같은 규칙에 슈링크플레이션·알레르기 4종·&lsquo;한방&rsquo; 표현 처분 기준"
+      ]
+     },
+     {
+      "label": "② 원료 — 왕느릅나무",
+      "value": "2중",
+      "unit": "기능성",
+      "delta": "<span class=\"mini-tag mt-indigo\">제2026-35호</span>11/25 인정 통보",
+      "foot": [
+       "근력 유지 + 근기능 유지 — 단일 인체시험으로 두 기능성 동시 인정(회사 설명)",
+       "용인세브란스 정형외과 24주, <b>저항성 운동 없이</b> 유의 개선",
+       "국내 자생 산림바이오 원료 · 식물성"
+      ]
+     },
+     {
+      "label": "③ 신제품 — 새로 확인",
+      "value": "4",
+      "unit": "건",
+      "delta": "<span class=\"mini-tag mt-indigo\">건기식 2 · 건강식품 1 · 음료 1</span>11/23~27",
+      "foot": [
+       "솔티스 기억력 카르세틴 · 정관장 에브리타임 <b>구강용해필름</b>",
+       "CJ 맛고구마(원물 스틱 70kcal) · 키레토 레몬(155mL)",
+       "제형 축이 &lsquo;물 없이·한 입에&rsquo;로 한 칸 더 이동"
+      ]
+     },
+     {
+      "label": "④ 커머스 — 순위는 정지, 가격은 이동",
+      "value": "10",
+      "unit": "위 동일",
+      "delta": "<span class=\"mini-tag mt-up\">덴프스 20,020 → 19,350원</span>쿠팡 판매량순",
+      "foot": [
+       "1~10위 구성이 이틀째 그대로 — 바뀐 것은 가격·리뷰 수",
+       "아이허브 블랙프라이데이 최대 30%(BFCMAPAC30)",
+       "아이허브 신상품에 <b>크레아틴 5g×30포</b> 스틱형"
+      ]
+     }
+    ]
+   },
+   {
+    "kind": "headlines",
+    "title": "한 줄 요약",
+    "tag": "4",
+    "items": [
+     {
+      "h": "어제의 &lsquo;미확인&rsquo;이 오늘 확정됐습니다 — 처분 기준이 붙었습니다",
+      "html": "식약처는 11/26 <b>식품표시광고법 시행규칙</b>이 개정·공포됐다고 11/27 밝혔습니다. AI 가상 전문가 부당광고에 <span class='hl'>행정처분이 신설</span>돼 1차 영업정지 15일(건기식 제조·유통전문판매) 또는 7일(판매업)이 붙습니다. 어제 리포트에서는 &lsquo;개정령안 공포 미확인&rsquo;으로 남겼던 부분입니다. 형사처벌(5년 이하 징역 또는 5,000만원)은 법률 시행일인 11/27부터 적용됩니다."
+     },
+     {
+      "h": "같은 규칙에 슈링크플레이션과 알레르기 4종이 함께 들어갔습니다",
+      "html": "가격을 유지하고 내용량을 줄이면서 그 사실을 표시하지 않으면 1차 처분이 <span class='hl'>시정명령 → 품목 제조정지 15일</span>로 강화됐습니다. 알레르기 유발물질 표시 대상에는 <b>참깨·들깨·아몬드·캐슈너트</b>가 추가돼 2028-01-01부터 22종 → <b>26종</b>이 됩니다. 광고에 쓸 수 없는 &lsquo;한방&rsquo;·&lsquo;특수제법&rsquo;·&lsquo;주문쇄도&rsquo;·&lsquo;단체추천&rsquo;도 처분 기준에 명확히 들어갔습니다."
+     },
+     {
+      "h": "제형 경쟁이 &lsquo;물 없이, 한 입에&rsquo;로 한 칸 더 갔습니다",
+      "html": "정관장 에브리타임이 액상 스틱·20mL 샷에 이어 <b>구강용해필름</b>을 내놨습니다(11/26 보도). 하루 1장을 입안에서 녹이는 방식으로, 물도 용기도 필요 없고 부피가 가장 작습니다. 같은 날 확인된 CJ 맛고구마는 <b>껍질째 찐·구운 통고구마 스틱</b>(1봉 70kcal), 키레토 레몬은 <b>155mL 유리병</b>입니다. <span class='hl'>섭취 장면을 줄이는 쪽으로 제형이 수렴</span>합니다."
+     },
+     {
+      "h": "순위표는 멈췄고, 숫자는 움직였습니다",
+      "html": "쿠팡 &lsquo;영양제&rsquo; 판매량순 <b>1~10위가 이틀 연속 동일</b>합니다. 움직인 것은 가격과 리뷰 수입니다 — 덴프스 덴마크 유산균이야기 30정 2개가 <span class='hl'>20,020원 → 19,350원(-3.3%)</span>, 나우푸드 마그네슘 20,940원 → 20,950원. 리뷰는 프로메가 183,475 → 183,789처럼 하루 300건 안팎 늘었습니다. 상위가 고정된 시장에서는 <b>가격이 유일한 변수</b>입니다."
+     }
+    ]
+   },
+   {
+    "kind": "list",
+    "title": "그 외 이번 회차에 확인된 품목·신고",
+    "tag": "보조",
+    "items": [
+     "<b>유한 관절유산균</b>(11/25 품목제조신고, 메디오젠 충주공장) — 기능성이 &lsquo;관절건강에 도움을 줄 수 있음&rsquo;인 <b>관절 유산균</b>. 장 건강이 아닌 관절로 유산균의 기능성 언어가 확장되는 사례입니다. 개별인정형 원료 여부·제형은 신고 공개정보에서 확인되지 않았습니다.",
+     "<b>에스트로우먼 갱년기 여성 케어</b>(11/26 신고, 유유헬스케어) — 회화나무열매추출물·대두이소플라본·홍삼·비타민D3&amp;K2를 담은 <b>정제</b>. 갱년기 여성 건강을 여러 원료로 겹쳐 쌓는 구성입니다.",
+     "<b>홍삼 에너지 부스터 샷</b>(11/24 신고, 케이지랩) — 홍삼 + 마그네슘·비타민B1·B2·B6·C·D, <b>액상</b>. 홍삼이 &lsquo;에너지 샷&rsquo; 제형으로 이동하는 흐름(KGC 아이패스와 같은 방향)입니다.",
+     "<b>휴럼 하루한포 6년근 고려홍삼 진세노사이드14</b>(11/26 신고) — 액상. 11월 홍삼 신고 18건 중 가장 최근 건입니다.",
+     "<b>글로우 히알콜라겐 4X</b>(11/25 신고, 뉴트리플래닛) — 저분자콜라겐펩타이드(제2023-33호) + 비오틴·셀렌. 이너뷰티 축은 이번 주도 신고가 이어집니다.",
+     "<b>팜델리 스트레스케어</b>(11/25 신고, 나눔제약) — L-테아닌(긴장완화) + 콜레우스포스콜리(체지방 감소) 조합. 다만 테아닌은 10/23 행정예고안에서 <b>영·유아·어린이 섭취 회피 대상 추가</b>가 예고돼 있어 대상 연령 표기를 함께 봐야 합니다."
+    ]
+   },
+   {
+    "kind": "strip",
+    "title": "숫자 한눈에",
+    "tag": "2026-11-27",
+    "cells": [
+     {
+      "b": "15일",
+      "s": "1차 위반 영업정지 (AI 가상 전문가)"
+     },
+     {
+      "b": "26종",
+      "s": "알레르기 표시 (2028~)"
+     },
+     {
+      "b": "제2026-35호",
+      "s": "왕느릅나무 근력·근기능"
+     },
+     {
+      "b": "2조원",
+      "s": "에브리타임 누적 매출(2012~)"
+     },
+     {
+      "b": "70kcal",
+      "s": "맛고구마 1봉"
+     },
+     {
+      "b": "1,350mg",
+      "s": "키레토 레몬 비타민C (155mL)"
+     },
+     {
+      "b": "19,350원",
+      "s": "덴프스 유산균 (전일 20,020)"
+     }
+    ],
+    "note": "에브리타임 누적 매출 2조원은 KGC가 올해 9월 공개한 자료 기준입니다. 쿠팡 가격은 11/27 오전 조회 시점 값이고, 쿠폰·카드할인에 따라 화면가가 달라집니다."
+   },
+   {
+    "kind": "fitlens",
+    "title": "아하핏 적합함 렌즈",
+    "tag": "판단 기준",
+    "desc": "이 대시보드의 모든 기회 판단은 아하핏이 지켜온 세 가지 기준으로 정렬합니다. 제형(정제·캡슐·분말·스틱·액상·음료·구미)은 목적이 아니라 수단입니다.",
+    "criteria": [
+     {
+      "no": "01",
+      "h": "적합한 품질",
+      "q": "내 가족이 먹어도 되는가",
+      "html": "오늘부터 품질은 <b>표시와 광고에서</b> 증명됩니다. AI 가상 전문가 광고에 행정처분이 붙었고, &lsquo;한방&rsquo;·&lsquo;특수제법&rsquo; 같은 표현의 처분 기준도 명확해졌습니다. 같은 규칙이 <b>내용량을 줄이고 숨기는 것</b>까지 처분 대상으로 넣었습니다 — 적합한 품질은 성분표뿐 아니라 <b>라벨의 정직함</b>으로도 측정됩니다."
+     },
+     {
+      "no": "02",
+      "h": "적합한 기능",
+      "q": "필요한 효능이 분명한가",
+      "html": "오늘의 기능성 언어는 <b>&lsquo;몸의 한 부위&rsquo;</b>로 모입니다 — 근력(왕느릅나무), 기억력(솔티스 카르세틴), 관절(유한 관절유산균), 잇몸(전일 뉴온). 검색에서도 12위 포스파티딜세린, 8위 멜라토닌, 7위 콘드로이친이 같은 축입니다. 복합은 설명을 늘리는 방식이 아니라 <b>한 부위를 가리키는 방식</b>이어야 합니다."
+     },
+     {
+      "no": "03",
+      "h": "적합한 가격",
+      "q": "부담 없이 꾸준히 살 수 있는가",
+      "html": "쿠팡 상위 10위가 그대로인데 덴프스만 3.3% 내렸습니다. 아이허브는 블랙프라이데이 코드로 최대 30%를 겁니다. 이제 가격은 &lsquo;얼마인가&rsquo;가 아니라 <b>&lsquo;내용량 대비 얼마인가&rsquo;</b>로 비교됩니다 — 슈링크플레이션 미표시 단속이 그 비교를 제도로 굳힌 셈입니다."
+     }
+    ],
+    "quote": "아하핏의 기준은 제 가족에게 적합한 것 — <b>적합한 품질, 적합한 기능, 적합한 가격</b>. 그리고 &lsquo;건강한 삶을 누릴 평등한 기회&rsquo;입니다.",
+    "quoteSrc": "ahai.co.kr 아하핏 소개 (2014-10-24)",
+    "principle": "<b>제형 불문 원칙.</b> 오늘 확인된 신호는 구강용해필름·원물 스틱·병 음료·정제로 흩어져 있습니다. 어느 하나가 우세하다고 읽지 않고, 같은 잣대(품질·기능·가격)를 댑니다."
+   },
+   {
+    "kind": "cards",
+    "cols": 2,
+    "title": "아하핏 MD 실무 시사점",
+    "tag": "해석",
+    "desc": "확인된 사실에 대한 해석입니다. 제형에 치우치지 않고, 적합함 세 기준으로 판정했습니다.",
+    "items": [
+     {
+      "pill": "기회",
+      "pcls": "g",
+      "h": "소용량화에 &lsquo;표시 규칙&rsquo;이 붙었습니다",
+      "html": "슈링크플레이션 미표시의 1차 처분이 시정명령에서 <b>품목 제조정지 15일</b>로 강화됐습니다. 전일 확인한 매일유업 셀렉스(50g → 40g, 단백질 12g 유지) 같은 소용량화는 이제 <b>내용량 감소 사실을 함께 표시</b>해야 하는 대상입니다. 아하핏이 소용량 SKU를 낼 때 &lsquo;줄인 만큼 낮춘 가격&rsquo;을 같은 화면에 두면, 단속 리스크가 오히려 <b>신뢰 문구</b>가 됩니다.",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip on\">기능 적합</span><span class=\"fitchip on\">가격 적합</span>"
+     },
+     {
+      "pill": "기회",
+      "pcls": "g",
+      "h": "알레르기 4종 추가 — 구미·바 라벨은 지금이 싸게 바꿀 때",
+      "html": "참깨·들깨·아몬드·캐슈너트가 2028-01-01부터 표시 대상(22 → 26종)이 됩니다. 견과를 넣는 <b>바·구미·스낵</b> 라인이 직접 영향권입니다. 지금 신규 SKU의 원료표·라벨 템플릿에 4종을 넣어두면 2028년 재라벨 비용이 0이 됩니다. 시간이 있으니 <b>개편 시점에 얹는</b> 것이 맞습니다.",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip mid\">기능 해당없음</span><span class=\"fitchip on\">가격 적합</span>"
+     },
+     {
+      "pill": "리스크",
+      "pcls": "r",
+      "h": "&lsquo;물 없이&rsquo; 제형은 1일 섭취량 문구가 관건입니다",
+      "html": "구강용해필름·이중제형·구미·분말 스틱은 모두 <b>물 없이, 한 번에</b> 먹는 제형입니다. 편의가 올라갈수록 &lsquo;하루 몇 장/몇 정&rsquo;이 흐려지기 쉽습니다. 정관장 필름은 &lsquo;하루 1장&rsquo;을 전면에 세웠습니다. 표시·광고에서 1일 섭취량을 <b>제형 단위</b>로 못 박지 않으면, 과다섭취 우려와 부당광고 리스크가 같이 옵니다.",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip on\">기능 적합</span><span class=\"fitchip mid\">가격 확인</span>"
+     },
+     {
+      "pill": "체크",
+      "pcls": "i",
+      "h": "근력 원료가 국산화됩니다 — 시니어와 젊은 층이 갈립니다",
+      "html": "왕느릅나무가 <b>운동 없이</b> 근력·근기능 두 기능성을 인정받았습니다(24주 시험). 같은 주에 쿠팡 8위는 크레아틴 분말, 아이허브 신상품은 <b>크레아틴 5g×30포 스틱</b>입니다. 근력 수요는 하나지만 제형은 둘로 갈립니다 — 시니어는 캡슐·정(운동 없이, 하루 1회), 운동하는 층은 분말·포(운동 전후). 한 라인으로 묶지 말고 <b>두 라인</b>으로 봐야 합니다.",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip on\">기능 적합</span><span class=\"fitchip mid\">가격 확인</span>"
+     }
+    ]
+   },
+   {
+    "kind": "history",
+    "title": "누적 추이 (히스토리 비교)",
+    "tag": "일일 누적",
+    "desc": "3일차입니다. 전일 대비 KPI·검색어·상품 순위 변동이 자동 계산됩니다."
+   },
+   {
+    "kind": "list",
+    "title": "이번 회차에서 확인하지 못한 것",
+    "items": [
+     "<b>시행규칙 전문·별표 조문</b> — 공포 사실과 처분 일수는 연합뉴스·식약처 발표로 확인했지만, 별표 7의 최종 문구는 관보 원문을 열어 확인하지 않았습니다. 전일 인용한 입법예고안(공고 제2026-386호)의 일수와 같게 보도됐습니다.",
+     "<b>신제품 가격</b> — 솔티스 카르세틴·정관장 필름·맛고구마·키레토 레몬의 소비자가는 보도자료에 없습니다(미확인). 다이소·홈쇼핑 채널은 판매가를 공개하지 않습니다.",
+     "<b>솔티스 카르세틴의 제형</b> — 보도에 정제·캡슐 등 제형 표기가 없습니다. 그래서 이번 회차 제형 분포 집계에서 제외했습니다.",
+     "<b>인스타그램·틱톡 국내 해시태그 실측</b> — 이번에도 직접 수집하지 못했습니다. 유튜브 업로드·광고 노출로 대체했습니다.",
+     "<b>건기식 수출 11월 값</b> — 11/20까지의 10일 단위 수출액으로 추정한 값(Trass 기반)입니다. 12/1 잠정치, 12/15 확정치와 다를 수 있습니다."
+    ]
+   }
+  ],
+  "newproducts": [
+   {
+    "kind": "cards",
+    "cols": 2,
+    "title": "신제품 상세 — 11/23~27 새로 확인",
+    "tag": "4건",
+    "desc": "브랜드·제품명·제형·핵심 원료·출시일·채널을 보도자료 기준으로 정리했습니다. 가격은 확인된 경우만 적었습니다.",
+    "items": [
+     {
+      "pill": "기억력 · 제형 미확인",
+      "pcls": "g",
+      "h": "솔티스 &lsquo;기억력 프로텍션 카르세틴&rsquo;",
+      "html": "<p class=\"kv\"><span class=\"k\">보도</span><span class=\"v\">2026-11-27</span></p><p class=\"kv\"><span class=\"k\">주원료</span><span class=\"v\">포도·블루베리추출혼합분말</span></p><p class=\"list-tight\" style=\"margin-top:8px\">식약처 <b>개별인정형</b> 원료(기억력 개선)를 적용. 1일 섭취 600mg에 카테킨 78mg·퀘르세틴 0.558mg 포함. 프랑스 원료기업 액티브 인사이드 연구 기반, 장기·단기 기억력 인체적용시험 확보.</p><p class=\"list-tight\" style=\"margin-top:8px\">제형·가격·판매 채널은 보도에 없습니다(미확인).</p><p class=\"note\" style=\"margin-top:8px\">출처: 로이슈 2026-11-27</p>",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip on\">기능 적합</span><span class=\"fitchip mid\">가격 확인</span>"
+     },
+     {
+      "pill": "구강용해필름",
+      "pcls": "g",
+      "h": "KGC 정관장 &lsquo;에브리타임&rsquo; — 필름까지 확장",
+      "html": "<p class=\"kv\"><span class=\"k\">보도</span><span class=\"v\">2026-11-26</span></p><p class=\"kv\"><span class=\"k\">제형</span><span class=\"v\">스틱 · 20mL 샷 · 필름</span></p><p class=\"list-tight\" style=\"margin-top:8px\">액상 스틱 중심에서 앰플(에브리타임 샷 20mL)·<b>구강용해필름</b>으로 확장. 필름은 하루 1장을 입안에서 녹여 먹고, 물·용기가 필요 없으며 휴대 부피가 가장 작습니다.</p><p class=\"list-tight\" style=\"margin-top:8px\">2012년 출시, 2026년 9월 공개 자료 기준 <b>누적 매출 2조원</b>. 맛은 오리지널·소프트·플레이버로 세분화.</p><p class=\"note\" style=\"margin-top:8px\">출처: 뉴스웨이 2026-11-26 · 제품별 가격 미확인</p>",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip on\">기능 적합</span><span class=\"fitchip on\">가격 적합</span>"
+     },
+     {
+      "pill": "원물 스틱 · 건강식품",
+      "pcls": "g",
+      "h": "CJ제일제당 &lsquo;맛고구마&rsquo;",
+      "html": "<p class=\"kv\"><span class=\"k\">출시</span><span class=\"v\">2026-11-27</span></p><p class=\"kv\"><span class=\"k\">채널</span><span class=\"v\">CJ더마켓·쿠팡·네이버 → 컬리·편의점(12월)</span></p><p class=\"list-tight\" style=\"margin-top:8px\">100% 통고구마를 껍질째 찌고 구워 <b>스틱 형태</b>로. 저온 보관 공정으로 첨가물 없이 단맛을 냄. 1봉 <b>70kcal</b>·식이섬유 1.5g.</p><p class=\"list-tight\" style=\"margin-top:8px\">맛밤(2004~, 누적 5억 개, 최근 3년 연평균 20%↑)·맛콩(누적 400만 개 근접)에 이은 &lsquo;맛&rsquo; 시리즈. 12/1 CJ더마켓 기획전.</p><p class=\"note\" style=\"margin-top:8px\">출처: CJ제일제당 보도자료·푸드아이콘 2026-11-27 · 가격 미확인</p>",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip mid\">기능 보통</span><span class=\"fitchip on\">가격 적합</span>"
+     },
+     {
+      "pill": "음료 · 155mL",
+      "pcls": "g",
+      "h": "CJ웰케어 &lsquo;키레토 레몬&rsquo; 국내 출시",
+      "html": "<p class=\"kv\"><span class=\"k\">출시</span><span class=\"v\">2026-11-23</span></p><p class=\"kv\"><span class=\"k\">채널</span><span class=\"v\">올리브영 온라인(11/23) → 오프라인·코스트코(11/25)</span></p><p class=\"list-tight\" style=\"margin-top:8px\">포카삿포로 푸드&amp;비버리지의 일본 건강 서포트 음료 <b>브랜드 판매액 점유율 1위</b>(후지경제 2024 출하액 기준). 일본 출시 25주년.</p><p class=\"list-tight\" style=\"margin-top:8px\">155mL 유리병에 레몬과즙 30mL(과즙 20%)·구연산 1,350mg·비타민C <b>1,350mg</b>. 2027년 편의점·이커머스 확대, 내년 1분기 &lsquo;무쿠미&rsquo; 추가 도입.</p><p class=\"note\" style=\"margin-top:8px\">출처: 푸드아이콘 2026-11-23 · 가격 미확인</p>",
+      "note": "",
+      "fit": "<span class=\"fitchip on\">품질 적합</span><span class=\"fitchip mid\">기능 보통</span><span class=\"fitchip mid\">가격 확인</span>"
+     }
+    ]
+   },
+   {
+    "kind": "timeline",
+    "title": "출시·보도 타임라인 (11/23~27)",
+    "tag": "5일",
+    "desc": "보도된 날짜 기준입니다. 실제 판매 개시일과 다를 수 있습니다.",
+    "items": [
+     {
+      "date": "2026-11-23 · 음료",
+      "tone": "",
+      "h": "CJ웰케어 &lsquo;키레토 레몬&rsquo;",
+      "html": "일본 1위 건강 서포트 음료 국내 유통권 확보. 올리브영 → 코스트코 → 2027 편의점 순차 확대.",
+      "srcHref": "https://www.foodicon.co.kr/news/articleView.html?idxno=36366",
+      "srcText": "푸드아이콘 2026-11-23"
+     },
+     {
+      "date": "2026-11-25 · 원료",
+      "tone": "proc",
+      "h": "왕느릅나무 껍질 추출분말 — 근력·근기능 이중기능성 인정",
+      "html": "식약처 인정번호 제2026-35호. 24주 인체시험(용인세브란스 정형외과), 저항성 운동 없이 유의 개선(회사 설명).",
+      "srcHref": "https://www.joongang.co.kr/article/25482496",
+      "srcText": "중앙일보 2026-11-27"
+     },
+     {
+      "date": "2026-11-26 · 제도",
+      "tone": "risk",
+      "h": "식품표시광고법 시행규칙 개정·공포",
+      "html": "AI 가상 전문가 부당광고 행정처분 신설, 슈링크플레이션 미표시 처분 강화, 알레르기 4종 추가, &lsquo;한방&rsquo; 등 표현 기준 명확화.",
+      "srcHref": "https://www.yna.co.kr/view/AKR20261127024300017",
+      "srcText": "연합뉴스 2026-11-27"
+     },
+     {
+      "date": "2026-11-26 · 건기식",
+      "tone": "proc",
+      "h": "정관장 에브리타임 — 구강용해필름 추가",
+      "html": "스틱·샷·필름 3제형. 누적 매출 2조원(2012년 출시 이후, 9월 공개 기준).",
+      "srcHref": "https://www.newsway.co.kr/news/view?ud=2026112615263443223",
+      "srcText": "뉴스웨이 2026-11-26"
+     },
+     {
+      "date": "2026-11-27 · 건강식품",
+      "tone": "",
+      "h": "CJ제일제당 &lsquo;맛고구마&rsquo;",
+      "html": "껍질째 찐·구운 통고구마 스틱, 70kcal. 온라인 선론칭 후 12월 컬리·편의점.",
+      "srcHref": "https://www.cj.co.kr/kr/newsroom/pressreleases/news-detail/1860",
+      "srcText": "CJ제일제당 2026-11-27"
+     },
+     {
+      "date": "2026-11-27 · 건기식",
+      "tone": "proc",
+      "h": "솔티스 &lsquo;기억력 프로텍션 카르세틴&rsquo;",
+      "html": "포도·블루베리추출혼합분말 600mg(개별인정형). 제형·가격 미확인.",
+      "srcHref": "https://www.lawissue.co.kr/view.php?ud=2026112708451924204ead0791_12",
+      "srcText": "로이슈 2026-11-27"
+     }
+    ]
+   },
+   {
+    "kind": "cards",
+    "cols": 3,
+    "title": "이번 주 제형이 움직인 방향",
+    "tag": "해석",
+    "desc": "건수가 아니라 &lsquo;어디로 수렴하는가&rsquo;만 보기 위한 정리입니다. 제형별 시장 규모는 여전히 미확인입니다.",
+    "items": [
+     {
+      "pill": "물 없이",
+      "pcls": "g",
+      "h": "필름 · 이중제형 · 구미",
+      "html": "정관장 구강용해필름(하루 1장), 편의점 1~3위 액상+정제 이중제형, 전일 확인한 뉴온 1정 복합. 공통점은 <b>물과 용기를 없애는 것</b>입니다. 섭취 장면이 짧아질수록 재구매가 붙습니다.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "한 입에",
+      "pcls": "i",
+      "h": "원물 스틱 · 155mL 병",
+      "html": "CJ 맛고구마는 껍질째 익힌 통고구마를 스틱으로 잘라 &lsquo;집어 먹는&rsquo; 형태로 만들었고, 키레토 레몬은 155mL로 <b>한 번에 마시는 양</b>을 고정했습니다. 건강식품도 제형으로 편의를 설계합니다.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "한 방울?",
+      "pcls": "r",
+      "h": "주의 — &lsquo;간편&rsquo;이 &lsquo;과다&rsquo;가 되지 않게",
+      "html": "필름·구미·스틱은 1일 섭취량이 눈에 덜 보입니다. 제형이 가벼워질수록 <b>1일 몇 단위</b>인지 라벨과 광고 첫 화면에 두는 것이 안전합니다. 오늘 확정된 처분 기준은 광고 문구에도 그대로 적용됩니다.",
+      "note": "",
+      "fit": ""
+     }
+    ]
+   },
+   {
+    "kind": "html",
+    "title": "원문 링크",
+    "html": "<div class=\"card\"><p class=\"srcs\"><a href=\"https://www.yna.co.kr/view/AKR20261127024300017\" target=\"_blank\" rel=\"noopener\">알레르기 유발물질 표시대상에 참깨·아몬드 등 4종 추가 (연합뉴스 2026-11-27)</a><br><a href=\"https://www.joongang.co.kr/article/25482496\" target=\"_blank\" rel=\"noopener\">왕느릅나무 추출물, 식약처 &lsquo;근력·근기능&rsquo; 이중기능성 원료 인정 (중앙일보 2026-11-27)</a><br><a href=\"https://www.lawissue.co.kr/view.php?ud=2026112708451924204ead0791_12\" target=\"_blank\" rel=\"noopener\">솔티스, 기억력 개선 기능성 원료 적용 건기식 출시 (로이슈 2026-11-27)</a><br><a href=\"https://www.newsway.co.kr/news/view?ud=2026112615263443223\" target=\"_blank\" rel=\"noopener\">정관장, 스틱부터 필름까지…홍삼 섭취 방식 다변화 (뉴스웨이 2026-11-26)</a><br><a href=\"https://www.cj.co.kr/kr/newsroom/pressreleases/news-detail/1860\" target=\"_blank\" rel=\"noopener\">CJ제일제당, 맛밤·맛콩 이어 &lsquo;맛고구마&rsquo; 출시 (2026-11-27)</a><br><a href=\"https://www.foodicon.co.kr/news/articleView.html?idxno=36366\" target=\"_blank\" rel=\"noopener\">일본 건강음료 1위 &lsquo;키레토 레몬&rsquo; 한국 상륙…CJ웰케어 (푸드아이콘 2026-11-23)</a><br><a href=\"https://www.foodicon.co.kr/news/articleView.html?idxno=36452\" target=\"_blank\" rel=\"noopener\">[새상품] CJ제일제당 &lsquo;맛고구마&rsquo; (푸드아이콘 2026-11-27)</a><br><a href=\"https://ffhub.kr/pages/notification\" target=\"_blank\" rel=\"noopener\">건강기능식품 품목제조신고 현황 (Functional Food Hub, 11/25~26 신고분)</a></p></div>"
+   },
+   {
+    "kind": "list",
+    "title": "신제품 축의 한계",
+    "items": [
+     "이번 회차의 &lsquo;새로 확인된 4건&rsquo;은 <b>언론·보도자료로 확인된 것</b>입니다. 11/23 키레토 레몬은 전일 리포트의 48시간 창(11/24~26) 밖이지만, 어제 목록에 없던 건이라 이번에 포함했습니다.",
+     "11/25~26 <b>품목제조신고</b> 신규 건은 &lsquo;신고&rsquo;이지 &lsquo;출시&rsquo;가 아닙니다. 신고 제품이 모두 판매되는 것은 아니므로, 위 &lsquo;그 외&rsquo; 목록은 <b>업계 준비 신호</b>로만 읽어야 합니다.",
+     "가격은 대부분 미확인입니다. 특히 다이소·홈쇼핑·약국 전용 라인은 판매가를 공개하지 않습니다(지어내지 않았습니다).",
+     "편의점·다이소 매장의 실제 진열 시점은 확인하지 않았습니다. 보도 시점과 다를 수 있습니다."
+    ]
+   }
+  ],
+  "market": [
+   {
+    "kind": "timeline",
+    "title": "규제·원료 타임라인",
+    "tag": "11/25 ~ 2028",
+    "desc": "이번 회차의 핵심은 11/26 공포입니다. 빨간 점은 단속·시행, 남색 점은 절차·인정.",
+    "items": [
+     {
+      "date": "2026-11-25 · 원료 인정",
+      "tone": "proc",
+      "h": "왕느릅나무 껍질 추출분말 — 근력·근기능 이중기능성 (제2026-35호)",
+      "html": "식약처가 11/25 인정 통보. &lsquo;노화로 감소될 수 있는 근력 유지&rsquo;·&lsquo;근기능 유지&rsquo; 두 기능성. 회사(닥터오레고닌)는 단일 인체시험으로 두 기능성을 동시에 인정받은 국내 첫 식물성 원료라고 밝혔습니다.",
+      "srcHref": "https://www.joongang.co.kr/article/25482496",
+      "srcText": "중앙일보 2026-11-27"
+     },
+     {
+      "date": "2026-11-26 · 공포",
+      "tone": "risk",
+      "h": "「식품 등의 표시·광고에 관한 법률 시행규칙」 개정·공포",
+      "html": "AI 가상 전문가 부당광고에 대한 <b>행정처분 신설</b>, 슈링크플레이션 미표시 처분 강화, 알레르기 4종 추가, &lsquo;한방&rsquo; 등 표현 기준 명확화가 한 번에 들어갔습니다. 이튿날 식약처가 공포 사실을 발표했습니다(11/27).",
+      "srcHref": "https://www.yna.co.kr/view/AKR20261127024300017",
+      "srcText": "연합뉴스 2026-11-27"
+     },
+     {
+      "date": "2026-11-27 · 시행",
+      "tone": "risk",
+      "h": "식품표시광고법 제8조 제1항 제11호 시행",
+      "html": "AI로 만든 가상의 전문가(의사·약사·교수 등)가 제품을 추천·보증하는 광고 금지. &lsquo;가상인물&rsquo; 표시를 붙여도 금지. 형사처벌(5년 이하 징역 또는 5,000만원)은 이날부터 적용됩니다.",
+      "srcHref": "https://ffhub.kr/posts/ai-virtual-expert-food-ad-ban-2026/",
+      "srcText": "Functional Food Hub 2026-11-24"
+     },
+     {
+      "date": "2026-11-27 · 발표",
+      "tone": "risk",
+      "h": "처분 기준 확정 — 1차 영업정지 15일 / 7일",
+      "html": "건기식 <b>제조업·유통전문판매업·수입판매업</b>은 1차 영업정지 15일, <b>건기식 판매업</b>(유통전문판매업 제외)은 7일. 전일 &lsquo;공포 미확인&rsquo;으로 남겼던 부분이 확정됐습니다.",
+      "srcHref": "https://www.yna.co.kr/view/AKR20261127024300017",
+      "srcText": "연합뉴스·식약처 2026-11-27"
+     },
+     {
+      "date": "2028-01-01 · 시행",
+      "tone": "proc",
+      "h": "알레르기 유발물질 표시 26종으로 확대",
+      "html": "참깨·들깨·아몬드·캐슈너트 4종 추가(기존 22종). 같은 시행규칙에 담겼지만 적용 시점은 2028년입니다.",
+      "srcHref": "https://www.yna.co.kr/view/AKR20261127024300017",
+      "srcText": "연합뉴스 2026-11-27"
+     },
+     {
+      "date": "2028-01-01 · 시행(안)",
+      "tone": "proc",
+      "h": "간 주의 원료 혼합 금지 (공고 제2026-513호)",
+      "html": "10/23 행정예고, 의견 제출 12/23까지. 확정되면 간 질환 주의사항이 있는 기능성 원료는 서로 섞을 수 없습니다. 아직 <b>확정 전</b>입니다.",
+      "srcHref": "https://ffhub.kr/posts/liver-caution-ingredients-mixing-ban-draft-2026/",
+      "srcText": "Functional Food Hub 2026-11-25"
+     }
+    ]
+   },
+   {
+    "kind": "kvcards",
+    "cols": 2,
+    "title": "11/26 공포 시행규칙 — 표시·광고에서 달라지는 4가지",
+    "tag": "11/27 적용",
+    "desc": "연합뉴스·식약처 발표와 전일 인용한 입법예고안(공고 제2026-386호)을 함께 정리했습니다. 최종 문구는 관보 원문 확인이 필요합니다.",
+    "items": [
+     {
+      "title": "① AI 가상 전문가",
+      "cap": "법률 11/27 시행 · 처분 기준 신설",
+      "rows": [
+       {
+        "k": "금지 대상",
+        "v": "AI 생성 가상 전문가의 추천·보증 광고"
+       },
+       {
+        "k": "제조·유통전문판매·수입",
+        "v": "1차 영업정지 15일"
+       },
+       {
+        "k": "건기식 판매업",
+        "v": "1차 영업정지 7일"
+       },
+       {
+        "k": "형사처벌",
+        "v": "5년 이하 징역 또는 5,000만원"
+       }
+      ]
+     },
+     {
+      "title": "② 슈링크플레이션",
+      "cap": "내용량 축소 미표시",
+      "rows": [
+       {
+        "k": "기존 1차 처분",
+        "v": "시정명령"
+       },
+       {
+        "k": "개정 후 1차",
+        "v": "품목 제조정지 15일"
+       },
+       {
+        "k": "대상",
+        "v": "가격 유지 + 내용량 감소 + 미표시"
+       },
+       {
+        "k": "실무",
+        "v": "소용량 SKU·리뉴얼 시 내용량 병기"
+       }
+      ]
+     },
+     {
+      "title": "③ 알레르기 표시",
+      "cap": "2028-01-01 시행",
+      "rows": [
+       {
+        "k": "추가 4종",
+        "v": "참깨 · 들깨 · 아몬드 · 캐슈너트"
+       },
+       {
+        "k": "총 표시 대상",
+        "v": "22종 → 26종"
+       },
+       {
+        "k": "직접 영향",
+        "v": "견과·씨앗을 쓰는 바·구미·스낵"
+       },
+       {
+        "k": "준비",
+        "v": "신규 SKU 라벨 템플릿에 선반영"
+       }
+      ]
+     },
+     {
+      "title": "④ 광고 금지 표현",
+      "cap": "처분 기준 명확화",
+      "rows": [
+       {
+        "k": "예시",
+        "v": "&lsquo;한방&rsquo; · &lsquo;특수제법&rsquo;"
+       },
+       {
+        "k": "추가 예시",
+        "v": "&lsquo;주문쇄도&rsquo; · &lsquo;단체추천&rsquo;"
+       },
+       {
+        "k": "의미",
+        "v": "처분 기준이 표에 명시됨"
+       },
+       {
+        "k": "실무",
+        "v": "상세페이지 카피 사전 점검"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind": "cards",
+    "cols": 3,
+    "title": "채널·수출·신고 동향",
+    "tag": "11/24~27",
+    "items": [
+     {
+      "pill": "채널",
+      "pcls": "g",
+      "h": "올리브베러 잠실역점 — 11/27 오픈",
+      "html": "<div class=\"kv\"><span class=\"k\">올리브영 잠실점</span><span class=\"v\">11/26 영업 종료</span></div><div class=\"kv\"><span class=\"k\">올리브베러 잠실역점</span><span class=\"v\">11/27 개점</span></div><p class=\"note\" style=\"margin-top:8px\">웰니스 전문 매장. 올리브베러 웰니스 상품 매출은 2월말 대비 8월말 <b>+49%</b>, 영양제 <b>+35%</b>, 10월 기준 증가율 51%. 온라인 월 매출 약 200억원(전체 온라인 12%). 성수 2호점에는 저당·제로·비건 간식 코너를 뒀습니다.</p>",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "수출",
+      "pcls": "i",
+      "h": "11월 건기식 수출 추정 8,700만 달러",
+      "html": "<div class=\"kv\"><span class=\"k\">11월 추정</span><span class=\"v\">87M USD (+5.4% YoY)</span></div><div class=\"kv\"><span class=\"k\">전월 대비</span><span class=\"v\">-1.6%</span></div><div class=\"kv\"><span class=\"k\">12개월 누적</span><span class=\"v\">1,045M USD (+9.0%)</span></div><p class=\"note\" style=\"margin-top:8px\">11/20까지의 10일 단위 수출액으로 추정한 값입니다. 12/1 잠정치·12/15 확정치에서 달라질 수 있어 <b>추정</b>으로 표기합니다.</p>",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "신고",
+      "pcls": "i",
+      "h": "관절 유산균·액상 마그네슘·홍삼 샷",
+      "html": "<div class=\"kv\"><span class=\"k\">11/25</span><span class=\"v\">유한 관절유산균(관절건강)</span></div><div class=\"kv\"><span class=\"k\">11/25</span><span class=\"v\">액상 젖산마그네슘 2건</span></div><div class=\"kv\"><span class=\"k\">11/26</span><span class=\"v\">홍삼 에너지 부스터 샷</span></div><p class=\"note\" style=\"margin-top:8px\">신고는 &lsquo;출시&rsquo;가 아니라 준비 신호입니다. 유산균 기능성이 장에서 <b>관절</b>로 넓어지는 흐름, 마그네슘이 <b>액상</b>으로 가는 흐름이 같이 보입니다.</p>",
+      "note": "",
+      "fit": ""
+     }
+    ]
+   },
+   {
+    "kind": "cards",
+    "cols": 2,
+    "title": "해외 시그널 — NutraIngredients 11/26",
+    "tag": "글로벌",
+    "items": [
+     {
+      "pill": "스포츠",
+      "pcls": "i",
+      "h": "Nike × Science in Sport — 러닝 전용 영양 라인",
+      "html": "스포츠 뉴트리션 브랜드 SiS가 <b>Nike와 다년 글로벌 파트너십</b>을 맺고 러닝 특화 제품군을 냅니다(11/26). 스포츠 보충제가 운동복·러닝 플랫폼과 붙는 흐름으로, 국내에서도 크레아틴·단백질이 헬스 층을 넘어 <b>러닝·일상</b>으로 가는 것과 같은 방향입니다.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "기능성식품",
+      "pcls": "i",
+      "h": "강황 샷, 장내미생물 파일럿 — &lsquo;증명&rsquo;의 단위",
+      "html": "프로 축구선수 11명(섭취 8·대조 3)이 6개월간 강황 샷을 하루 2회 마신 파일럿에서 <b>Blautia 증가·Alistipes 감소</b>가 관찰됐습니다(11/26). 회사는 대규모 후속 연구와 생체이용률 시험을 예고했습니다. 표본 11명이라 <b>효과의 증거는 아닙니다</b>.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "디지털",
+      "pcls": "i",
+      "h": "Danone, 아동 철결핍성 빈혈 AI 스크리닝",
+      "html": "사진 촬영과 설문을 결합해 어린이 철결핍성 빈혈 위험을 조기에 선별하는 온라인 툴을 공개했습니다(11/26). 보충제가 <b>진단·선별 도구와 결합</b>하는 사례입니다.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "소화",
+      "pcls": "i",
+      "h": "소화효소 + 식이 조정, 장 불편감 개선",
+      "html": "소화효소와 식이 변화를 함께 적용했을 때 장 불편감이 개선됐다는 연구 보도(11/26). 국내에서도 카무트효소·캡슐레이션효소가 검색 14~18위에 머무는 카테고리입니다.",
+      "note": "",
+      "fit": ""
+     }
+    ]
+   },
+   {
+    "kind": "html",
+    "title": "원문 링크",
+    "html": "<div class=\"card\"><p class=\"srcs\"><a href=\"https://www.yna.co.kr/view/AKR20261127024300017\" target=\"_blank\" rel=\"noopener\">&ldquo;2028년부터 참깨·아몬드 등 4종 알레르기 표시&rdquo;…시행규칙 개정·공포 (연합뉴스 2026-11-27)</a><br><a href=\"https://www.joongang.co.kr/article/25482496\" target=\"_blank\" rel=\"noopener\">왕느릅나무 추출물, 근력·근기능 이중기능성 원료 인정 (중앙일보 2026-11-27)</a><br><a href=\"https://ffhub.kr/posts/ai-virtual-expert-food-ad-ban-2026/\" target=\"_blank\" rel=\"noopener\">AI 가상 전문가 광고 금지 — 11/27부터 회사가 점검할 것 (FFH 2026-11-24)</a><br><a href=\"https://news.nate.com/view/20261126n03413\" target=\"_blank\" rel=\"noopener\">CJ올리브영, 잠실점 대신 &lsquo;올리브베러&rsquo;…웰니스 거점 확보 (투데이코리아 2026-11-26)</a><br><a href=\"https://www.huffingtonpost.kr/article/262434\" target=\"_blank\" rel=\"noopener\">올리브베러 웰니스 매출 +49%·영양제 +35% (허프포스트코리아 2026-11-26)</a><br><a href=\"https://moneyrecipe.blog/export-preview-k-food-26-11/\" target=\"_blank\" rel=\"noopener\">26년 11월 K-푸드 수출 추정치 — 건기식 87M USD (머니레시피 2026-11-21)</a><br><a href=\"https://www.nutraingredients.com/Article/2026/11/26/pilot-study-indicates-turmeric-shot-may-influence-inflammation-via-the-gut/\" target=\"_blank\" rel=\"noopener\">Turmeric shot and the gut microbiome — pilot study (NutraIngredients 2026-11-26)</a><br><a href=\"https://www.nutraingredients.com/Health-conditions/Active-nutrition/\" target=\"_blank\" rel=\"noopener\">Nike and Science in Sport join forces (NutraIngredients 2026-11-26)</a><br><a href=\"https://www.nutraingredients.com/Regions/Asia-Pacific/\" target=\"_blank\" rel=\"noopener\">Danone AI tool for iron-deficiency anemia screening (NutraIngredients 2026-11-26)</a></p></div>"
+   },
+   {
+    "kind": "list",
+    "title": "이 탭에서 확인하지 못한 것",
+    "items": [
+     "<b>시행규칙 별표 7 최종 조문</b> — 처분 일수는 보도·발표 기준입니다. 관보 원문(별표 표·부칙)은 열어 확인하지 않았습니다.",
+     "<b>왕느릅나무 인체시험 상세</b> — 시험 규모(피험자 수)·용량·지표는 회사 설명 범위에서만 확인했습니다. 논문·인정서 원문은 미확인입니다.",
+     "<b>올리브베러 매출 수치</b> — 회사·업계 보도 인용값입니다. 매장 단위 손익은 공개되지 않습니다.",
+     "<b>수출 11월 값</b> — 10일 단위 추정입니다(위 카드 참조)."
+    ]
+   }
+  ],
+  "youtube": [
+   {
+    "kind": "bars",
+    "title": "이번 주(11/20~27) 업로드 화제 영상",
+    "tag": "2026-11-27 조회",
+    "desc": "&lsquo;영양제 추천&rsquo; 검색 · 업로드 날짜 &lsquo;이번 주&rsquo; 기준 노출 순서입니다. 조회수는 화면 표시값의 약값입니다.",
+    "items": [
+     {
+      "label": "약들약 — &ldquo;가성비의 대명사 코스트코 영양제, 최고의 제품은 이겁니다&rdquo;",
+      "small": "2일 전 · 전일 9.9만 → 21만",
+      "val": "약 21만",
+      "w": 100,
+      "tone": "",
+      "valSub": "조회"
+     },
+     {
+      "label": "심톨 — NMN 셀글로우 (로킷아메리카 공동개발)",
+      "small": "3일 전 · 전일 2.9만",
+      "val": "약 3만",
+      "w": 14,
+      "tone": "indigo",
+      "valSub": "조회"
+     },
+     {
+      "label": "리틀약사 — 밀크씨슬 실리마린 함량·순도·원료사 비교",
+      "small": "2일 전 · 신규 진입",
+      "val": "약 2.7만",
+      "w": 13,
+      "tone": "indigo",
+      "valSub": "조회"
+     },
+     {
+      "label": "탱크약사 — 약국 비타민B 고르는 법",
+      "small": "6일 전",
+      "val": "약 2.7천",
+      "w": 1.3,
+      "tone": "amber",
+      "valSub": "조회"
+     },
+     {
+      "label": "아름약사 — 혈당 관리 성분 5가지 (베르베린·바나바·구아검)",
+      "small": "17시간 전 · 신규",
+      "val": "약 2.3천",
+      "w": 1.1,
+      "tone": "amber",
+      "valSub": "조회"
+     },
+     {
+      "label": "요리조리셜리 — 30대 호주 간호대생 추천 영양제 5가지",
+      "small": "22시간 전 · 제품 5개 링크",
+      "val": "304",
+      "w": 0.1,
+      "tone": "amber",
+      "valSub": "조회"
+     }
+    ],
+    "note": "코스트코 영상은 하루 만에 9.9만 → 21만으로 <b>두 배 이상</b> 늘었습니다. 전일 상위였던 영상(약들약·심톨)이 그대로 상위에 남아 있고, 새로 들어온 것은 밀크씨슬·혈당 콘텐츠입니다."
+   },
+   {
+    "kind": "cards",
+    "cols": 2,
+    "title": "소재가 갈라진 두 축",
+    "tag": "해석",
+    "items": [
+     {
+      "pill": "가성비",
+      "pcls": "g",
+      "h": "코스트코 — &lsquo;어디서 사면 안 속나&rsquo;가 다시 1번",
+      "html": "약들약의 코스트코 커클랜드 영상이 하루 만에 조회 두 배(9.9만 → 21만)가 됐습니다. 다이소(전일 Shorts 236만·212만)와 함께 <b>가격 비교 콘텐츠</b>가 계속 상위를 먹습니다. 성분 설명보다 &lsquo;어디서 사면 손해가 아닌가&rsquo;가 먼저 소비됩니다.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "간·혈당",
+      "pcls": "i",
+      "h": "밀크씨슬 · 혈당 — &lsquo;내 숫자&rsquo;로 말하는 콘텐츠",
+      "html": "리틀약사는 실리마린 <b>130mg이 같아도 순도·원료사가 다르다</b>는 비교로 2.7만 회를 냈고, 아름약사는 공복혈당·식후혈당별로 성분을 나눠 설명했습니다. 30~40대 편의점 구매 1위 품목이 밀크시슬·블랙마카였다는 전일 보도와 같은 수요입니다.",
+      "note": "",
+      "fit": ""
+     }
+    ]
+   },
+   {
+    "kind": "cards",
+    "cols": 2,
+    "title": "광고·Shorts 신호",
+    "tag": "참고",
+    "items": [
+     {
+      "pill": "광고",
+      "pcls": "",
+      "h": "아이허브 블랙프라이데이 — 전 품목 최대 30%",
+      "html": "검색 상단 스폰서로 <b>아이허브 블프</b>(전 품목 최대 30%·장바구니 웰니스)가 붙었고, 국내몰에서도 할인코드 <b>BFCMAPAC30</b>이 안내됩니다. 같은 화면에 약국 조합 사이트·뉴트리코어 LGG·정관장 클리어런스 광고가 함께 걸려, 연말 할인 경쟁이 <b>검색 광고 단가</b>까지 끌어올리는 국면입니다.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "양산형",
+      "pcls": "r",
+      "h": "쿠팡파트너스형 &lsquo;추천 리스트&rsquo; 영상이 늘었습니다",
+      "html": "이노시톨·수면 영양제를 다룬 3~4분짜리 리스트형 영상이 여러 채널에서 같은 문구(&lsquo;쿠팡 파트너스 활동의 일환&rsquo;)로 올라왔습니다. 조회수는 0~1회 수준입니다. <b>조회수가 수요의 증거는 아닙니다</b> — 이런 콘텐츠의 증가는 수요가 아니라 <b>판매 수단의 증가</b>로 읽어야 합니다.",
+      "note": "",
+      "fit": ""
+     }
+    ]
+   },
+   {
+    "kind": "list",
+    "title": "이 탭의 한계",
+    "items": [
+     "유튜브 조회수는 조회 시점 표시값의 약값입니다. 순위는 &lsquo;관련도 상위&rsquo; 노출 순서이며 조회수 정렬이 아닙니다.",
+     "업로드 &lsquo;이번 주&rsquo; 필터로 좁혀 <b>새로 올라온 영상</b>만 봤기 때문에, 3~4주 전 업로드된 누적 상위 영상과 직접 비교할 수 없습니다.",
+     "<b>인스타그램·틱톡 국내 해시태그 실측은 이번에도 수집하지 못했습니다.</b> 이 축은 유튜브로 대체했습니다.",
+     "쇼츠 개별 조회수의 업로드 시점은 미확인입니다(누적값만 표시)."
+    ]
+   }
+  ],
+  "rank": [
+   {
+    "kind": "donuts",
+    "title": "차트 2 · 네이버 데이터랩 쇼핑인사이트",
+    "tag": "식품 &gt; 건강식품",
+    "desc": "2026-10-26 ~ 2026-11-26 직접 조회. 전회(10-25~11-25)와 하루 겹치는 이동 창입니다.",
+    "items": [
+     {
+      "title": "기기",
+      "cap": "모바일 87% — 전회와 동일",
+      "percent": 87,
+      "big": "87%",
+      "label": "모바일",
+      "legend": [
+       [
+        "모바일",
+        "87%",
+        "#0d9488"
+       ],
+       [
+        "PC",
+        "13%",
+        "#cbd5e1"
+       ]
+      ]
+     },
+     {
+      "title": "성별",
+      "cap": "여성 63% — 전회와 동일",
+      "percent": 63,
+      "big": "63%",
+      "label": "여성",
+      "legend": [
+       [
+        "여성",
+        "63%",
+        "#4f46e5"
+       ],
+       [
+        "남성",
+        "37%",
+        "#cbd5e1"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "kind": "agecols",
+    "title": "연령대별 검색 지수 <span style='font-size:12px;font-weight:600;color:#64748b'>(50대 = 100)</span>",
+    "desc": "40·50·60대가 전체의 대부분. 전회와 같은 구조입니다(10대 0.42 · 20대 8.21 · 30대 39.86).",
+    "items": [
+     {
+      "name": "10대",
+      "val": "0.4",
+      "n": 0.42
+     },
+     {
+      "name": "20대",
+      "val": "8.2",
+      "n": 8.21
+     },
+     {
+      "name": "30대",
+      "val": "39.9",
+      "n": 39.86
+     },
+     {
+      "name": "40대",
+      "val": "84.5",
+      "n": 84.48
+     },
+     {
+      "name": "50대",
+      "val": "100",
+      "n": 100
+     },
+     {
+      "name": "60대",
+      "val": "83.3",
+      "n": 83.26
+     }
+    ],
+    "callout": "<b>구조는 그대로, 꼬리만 흔들립니다.</b> 조회 기간이 하루 밀리면서 빠져나간 10/25과 새로 들어온 11/26의 차이가 순위 이동으로 나타납니다. 그래서 1~13위처럼 상위는 거의 고정되고, 14~20위에서 1~3칸씩 움직입니다."
+   },
+   {
+    "kind": "keywords",
+    "title": "인기검색어 TOP 20 — 전일 대비",
+    "tag": "2026-10-26 ~ 11-26",
+    "desc": "표시된 ▲▼는 전일(2026-11-26 리포트) 대비 순위 변동입니다. 이 화면 자체는 변동을 표시하지 않아, 두 회차 조회값을 직접 비교했습니다.",
+    "items": [
+     {
+      "r": 1,
+      "k": "오메가3",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 2,
+      "k": "젖산마그네슘",
+      "key": 1,
+      "tag": "유지"
+     },
+     {
+      "r": 3,
+      "k": "마그네슘",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 4,
+      "k": "유산균",
+      "key": 0,
+      "tag": "▲1"
+     },
+     {
+      "r": 5,
+      "k": "비타민C",
+      "key": 0,
+      "tag": "▼1"
+     },
+     {
+      "r": 6,
+      "k": "매스틱",
+      "key": 1,
+      "tag": "유지"
+     },
+     {
+      "r": 7,
+      "k": "콘드로이친",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 8,
+      "k": "멜라토닌",
+      "key": 1,
+      "tag": "유지"
+     },
+     {
+      "r": 9,
+      "k": "뉴케어구수한맛",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 10,
+      "k": "비타민D",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 11,
+      "k": "베르베린",
+      "key": 1,
+      "tag": "유지"
+     },
+     {
+      "r": 12,
+      "k": "포스파티딜세린",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 13,
+      "k": "뉴케어",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 14,
+      "k": "하스카프베리",
+      "key": 0,
+      "tag": "▲3"
+     },
+     {
+      "r": 15,
+      "k": "카무트효소",
+      "key": 0,
+      "tag": "▼1"
+     },
+     {
+      "r": 16,
+      "k": "루테인",
+      "key": 0,
+      "tag": "▼1"
+     },
+     {
+      "r": 17,
+      "k": "삼백초",
+      "key": 0,
+      "tag": "▼1"
+     },
+     {
+      "r": 18,
+      "k": "캡슐레이션효소",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 19,
+      "k": "커큐민",
+      "key": 0,
+      "tag": "유지"
+     },
+     {
+      "r": 20,
+      "k": "NMN",
+      "key": 0,
+      "tag": "NEW"
+     }
+    ],
+    "note": "<b>어제의 해석을 한 번 접습니다.</b> 전일에는 NMN이 20위 밖으로 밀리고 &lsquo;뼈엔엠비피mbp&rsquo;가 들어온 것을 &lsquo;항노화 관심이 NMN→코큐텐·뼈로 이동&rsquo;으로 읽었습니다. 오늘 NMN이 <b>20위로 돌아오고 뼈엔엠비피가 다시 권외</b>로 갔습니다. 하루 만에 뒤집힌 만큼, 20위 경계의 변화는 <b>시장 신호보다 하루치 교체 효과</b>로 보는 것이 맞습니다. 안쪽에서 실제로 움직인 것은 하스카프베리 17→14(▲3)입니다."
+   },
+   {
+    "kind": "cards",
+    "cols": 2,
+    "title": "순위표 두 개의 성격 차이",
+    "tag": "2026-11-27",
+    "items": [
+     {
+      "pill": "네이버",
+      "pcls": "i",
+      "h": "상단 2건은 광고입니다",
+      "html": "네이버 가격비교 &lsquo;영양제&rsquo; 랭킹순 상위에 <b>광고 2건</b>(여에스더 멀티비타민 4박스 84,000원 · 테라랩 피엠시톨 115,000원)이 붙었습니다. 비광고 1번은 <b>오쏘몰 이뭄 30일분+바이탈M</b> 94,900원(평점 4.91·리뷰 10.1만·구매 3.6만)입니다. 전일 1위(72,440원·30개입)와는 <b>SKU가 다릅니다</b>.",
+      "note": "",
+      "fit": ""
+     },
+     {
+      "pill": "쿠팡",
+      "pcls": "g",
+      "h": "상위 10위 구성이 이틀째 같습니다",
+      "html": "1위 프로메가 오메가3 11,700원부터 10위 자로우 도피러스 31,470원까지 <b>구성·순서 동일</b>. 바뀐 것은 가격(덴프스 20,020 → 19,350원)과 리뷰 수(프로메가 183,475 → 183,789)뿐입니다. 상위가 고정된 시장에서는 <b>가격 인하만이 순위를 흔드는 변수</b>입니다.",
+      "note": "",
+      "fit": ""
+     }
+    ]
+   },
+   {
+    "kind": "ranktables",
+    "title": "쿠팡 판매량순 · 네이버 랭킹순 · 아이허브 베스트셀러",
+    "tag": "2026-11-27 조회",
+    "desc": "쿠팡은 &lsquo;영양제&rsquo; 검색 후 판매량순, 네이버는 &lsquo;영양제&rsquo; 가격비교 랭킹순, 아이허브는 국내몰 베스트셀러(영양제 탭)입니다. 산정 기준이 다르므로 표 사이의 순위를 서로 비교하지 않습니다.",
+    "tables": [
+     {
+      "id": "rkCoupang",
+      "ch": "coupang",
+      "title": "쿠팡 &lsquo;영양제&rsquo; 판매량순 — 상위 10",
+      "cap": "전일과 <b>구성·순서가 같습니다</b>. 가격·리뷰만 갱신됐습니다. 가격은 조회 시점 값.",
+      "rows": [
+       {
+        "rank": 1,
+        "name": "종근당건강 프로메가 오메가3 트리플 60정",
+        "sub": "",
+        "price": "11,700원",
+        "rev": "183,789",
+        "memo": "정제"
+       },
+       {
+        "rank": 2,
+        "name": "고려은단 비타민C 1000 180정",
+        "sub": "쇼핑백 포함",
+        "price": "17,410원",
+        "rev": "326,663",
+        "memo": "리뷰 최다"
+       },
+       {
+        "rank": 3,
+        "name": "종근당 칼슘앤마그네슘 비타민D 아연 180정",
+        "sub": "",
+        "price": "14,070원",
+        "rev": "215,760",
+        "memo": "정제"
+       },
+       {
+        "rank": 4,
+        "name": "메가도스 비타민C 3000mg 180g",
+        "sub": "",
+        "price": "15,540원",
+        "rev": "90,248",
+        "memo": "분말"
+       },
+       {
+        "rank": 5,
+        "name": "나우푸드 마그네슘 글리시네이트 180정",
+        "sub": "전일 20,940원",
+        "price": "20,950원",
+        "rev": "30,861",
+        "memo": "정제"
+       },
+       {
+        "rank": 6,
+        "name": "메가도스 비타민C 3000mg 2개",
+        "sub": "",
+        "price": "29,080원",
+        "rev": "90,248",
+        "memo": "묶음"
+       },
+       {
+        "rank": 7,
+        "name": "락토핏 골드 80포",
+        "sub": "",
+        "price": "18,500원",
+        "rev": "268,498",
+        "memo": "분말 스틱"
+       },
+       {
+        "rank": 8,
+        "name": "뉴트리코스트 크레아틴 분말 300g",
+        "sub": "",
+        "price": "20,900원",
+        "rev": "23,389",
+        "memo": "크레아틴"
+       },
+       {
+        "rank": 9,
+        "name": "덴프스 덴마크 유산균이야기 30정 2개",
+        "sub": "전일 20,020원 (-3.3%)",
+        "price": "19,350원",
+        "rev": "79,270",
+        "memo": "캡슐"
+       },
+       {
+        "rank": 10,
+        "name": "자로우 포뮬러스 도피러스 EPS 유산균 120정",
+        "sub": "",
+        "price": "31,470원",
+        "rev": "63,271",
+        "memo": "캡슐"
+       }
+      ]
+     },
+     {
+      "id": "rkNaver",
+      "ch": "naver",
+      "title": "네이버 가격비교 &lsquo;영양제&rsquo; 랭킹순 — 상위 5",
+      "cap": "1~2위는 <b>광고</b>입니다. 비광고 1번은 오쏘몰 이뭄(94,900원)으로, 전일 1위(72,440원·30개입)와 SKU가 달라 직접 비교하지 않았습니다.",
+      "rows": [
+       {
+        "rank": 1,
+        "name": "[4박스] 여에스더 멀티비타민&리포좀 비타민B",
+        "sub": "비타민 13종·미네랄 8종",
+        "price": "84,000원",
+        "rev": "-",
+        "memo": "광고"
+       },
+       {
+        "rank": 2,
+        "name": "테라랩 피엠시톨 복합비타민 10중 기능성",
+        "sub": "이노시톨 배합",
+        "price": "115,000원",
+        "rev": "찜 786",
+        "memo": "광고"
+       },
+       {
+        "rank": 3,
+        "name": "오쏘몰 이뭄 멀티비타민 30일분 + 바이탈M 7일분",
+        "sub": "동아제약 브랜드스토어",
+        "price": "94,900원",
+        "rev": "10.1만",
+        "memo": "평점 4.91 · 구매 3.6만"
+       },
+       {
+        "rank": 4,
+        "name": "리노브 액티바이타 비타민믹스 바나나맛 6개월분",
+        "sub": "",
+        "price": "77,800원",
+        "rev": "485",
+        "memo": "평점 4.93"
+       },
+       {
+        "rank": 5,
+        "name": "데이팩 필수성분 올인원 종합영양제 3개월",
+        "sub": "유산균·오메가3·루테인·멀티비타민",
+        "price": "105,500원",
+        "rev": "2.4만",
+        "memo": "평점 4.89"
+       }
+      ]
+     },
+     {
+      "id": "rkIherb",
+      "ch": "iherb",
+      "title": "아이허브 국내몰 베스트셀러(영양제) — 상위 6",
+      "cap": "블랙프라이데이 기간이라 <b>할인코드 적용가</b>가 표시됩니다(코드 BFCMAPAC30). 표시가는 조회 시점 값.",
+      "rows": [
+       {
+        "rank": 1,
+        "name": "Doctor's Best 고흡수 마그네슘 리시네이트·글리시네이트 240정",
+        "sub": "Albion TRAACS",
+        "price": "28,026원",
+        "rev": "220,737",
+        "memo": "마그네슘"
+       },
+       {
+        "rank": 2,
+        "name": "California Gold Nutrition LactoBif 30 프로바이오틱 300억 CFU 120정",
+        "sub": "",
+        "price": "38,572원",
+        "rev": "173,425",
+        "memo": "유산균"
+       },
+       {
+        "rank": 3,
+        "name": "Life Extension 투 퍼 데이 종합비타민 120정",
+        "sub": "코드 적용 15%",
+        "price": "26,526원",
+        "rev": "72,188",
+        "memo": "멀티비타민"
+       },
+       {
+        "rank": 4,
+        "name": "California Gold Nutrition 오메가 800 90정",
+        "sub": "",
+        "price": "36,501원",
+        "rev": "142,605",
+        "memo": "오메가3"
+       },
+       {
+        "rank": 5,
+        "name": "Thorne 베이직 B 복합체 60정",
+        "sub": "",
+        "price": "27,851원",
+        "rev": "24,525",
+        "memo": "비타민B"
+       },
+       {
+        "rank": 6,
+        "name": "California Gold Nutrition Gold C 1,000mg 240정",
+        "sub": "USP 등급",
+        "price": "20,948원",
+        "rev": "390,650",
+        "memo": "비타민C"
+       }
+      ]
+     }
+    ],
+    "note": "아이허브 <b>신상품</b>에는 &lsquo;스포츠 - 크레아틴 일수화물, 무맛, 5g × 30포&rsquo;(21,240원)가 올라 있습니다. 국내 쿠팡 8위가 크레아틴 <b>분말</b>인 것과 겹쳐, 크레아틴이 통 단위·스틱 단위로 잘게 나뉘는 중으로 읽힙니다."
+   },
+   {
+    "kind": "list",
+    "title": "랭킹 탭에서 확인하지 못한 것",
+    "items": [
+     "<b>쿠팡 카테고리(건강식품) 랭킹</b> — 이번에도 카테고리 경로 대신 &lsquo;영양제&rsquo; 판매량순 검색 결과를 썼습니다. 전일과 같은 화면이라 <b>전일 대비 비교는 유효</b>합니다.",
+     "<b>네이버 &lsquo;많이 본&rsquo;·네이버+ 스토어</b> — 이번 회차 미조회. 전일 표와 이어 붙이지 않았습니다.",
+     "<b>아이허브 순위 변동</b> — 전일에는 페이지 경로(/best-sellers)가 없어 조회하지 못했고, 이번에는 국내몰 홈의 베스트셀러 캐러셀에서 <b>현재 순서만</b> 확인했습니다. 일간 변동은 미확인입니다.",
+     "데이터랩은 기간별 TOP 500만 제공하고 변동 표시가 없어, <b>두 회차 조회값을 직접 비교</b>해 변동을 산출했습니다. 조회 기간이 하루씩 밀리는 효과가 포함돼 있습니다."
+    ]
+   }
+  ]
+ },
+ "footer": {
+  "sources": [
+   "정책·규제 — <a href=\"https://www.yna.co.kr/view/AKR20261127024300017\" target=\"_blank\" rel=\"noopener\">연합뉴스 2026-11-27(시행규칙 공포·알레르기 4종·슈링크플레이션·AI 가상 전문가 처분)</a> · <a href=\"https://ffhub.kr/posts/ai-virtual-expert-food-ad-ban-2026/\" target=\"_blank\" rel=\"noopener\">FFH 2026-11-24(법률·처분 기준 해설)</a> · <a href=\"https://ffhub.kr/posts/liver-caution-ingredients-mixing-ban-draft-2026/\" target=\"_blank\" rel=\"noopener\">공고 제2026-513호 해설</a>",
+   "원료 — <a href=\"https://www.joongang.co.kr/article/25482496\" target=\"_blank\" rel=\"noopener\">중앙일보 2026-11-27(왕느릅나무 근력·근기능 제2026-35호)</a> · <a href=\"https://ffhub.kr/pages/notification\" target=\"_blank\" rel=\"noopener\">품목제조신고 11/25~26 신고분</a>",
+   "신제품 — 로이슈 2026-11-27(솔티스) · 뉴스웨이 2026-11-26(정관장 에브리타임) · CJ제일제당 보도자료·푸드아이콘 2026-11-27(맛고구마) · 푸드아이콘 2026-11-23(CJ웰케어 키레토 레몬)",
+   "채널·수출 — <a href=\"https://news.nate.com/view/20261126n03413\" target=\"_blank\" rel=\"noopener\">투데이코리아 2026-11-26(올리브베러 잠실역점)</a> · <a href=\"https://www.huffingtonpost.kr/article/262434\" target=\"_blank\" rel=\"noopener\">허프포스트코리아 2026-11-26(올리브베러 매출)</a> · <a href=\"https://moneyrecipe.blog/export-preview-k-food-26-11/\" target=\"_blank\" rel=\"noopener\">머니레시피 2026-11-21(11월 수출 추정, Trass 기반)</a>",
+   "해외 — NutraIngredients 2026-11-26(강황 샷 마이크로바이옴 파일럿 · Nike×SiS · Danone AI 선별 · 소화효소)",
+   "검색·커머스 — 네이버 데이터랩 쇼핑인사이트(식품&gt;건강식품, 2026-10-26~11-26 직접 조회) · 쿠팡 &lsquo;영양제&rsquo; 판매량순(2026-11-27) · 네이버 가격비교 &lsquo;영양제&rsquo; 랭킹순(2026-11-27) · kr.iherb.com 베스트셀러·신상품(2026-11-27)",
+   "유튜브 — 2026-11-27 조회, &lsquo;영양제 추천&rsquo; · 업로드 &lsquo;이번 주&rsquo; 노출 순서(조회수는 표시값 약값)"
+  ],
+  "about": "<b>2026-11-27 (금) 3회차 브리핑 데이터 기준.</b> 가격·리뷰수·조회수는 조회 시점 값이라 이후 변동될 수 있습니다. 확인하지 못한 항목은 &lsquo;미확인&rsquo;으로 남겼고, 해석이 들어간 부분은 &lsquo;해석&rsquo;·&lsquo;추정&rsquo;으로 표시했습니다. 전일 리포트에서 &lsquo;공포 미확인&rsquo;으로 남긴 시행규칙은 이번 회차에 확정 내용으로 교체했습니다. 이 리포트의 원본 데이터는 <code>data/daily/2026-11-27.json</code>이며, 1회차(<code>2026-11-25</code>)·2회차(<code>2026-11-26</code>)는 그대로 남아 있습니다.",
+  "next": "다음 회차 보완: ① 시행규칙 별표 7 관보 원문 확인 ② 소용량 SKU·리뉴얼 사례에서 내용량 표기 방식 추적 ③ 알레르기 4종 대응 라벨 사례(바·구미) 찾기 ④ 쿠팡 건강식품 카테고리 경로 복구 ⑤ 아이허브 일간 순위 변동 기준 세우기 ⑥ 인스타·틱톡 국내 실측."
+ },
+ "trend": {
+  "kpi": {
+   "marketEok": 61280,
+   "purchaseRate": 82.7,
+   "householdsMan": 1832.6,
+   "onlineShare": 71.6,
+   "smallPackIntent": 82.0,
+   "exportEok": 4524
+  },
+  "keywords": [
+   {
+    "k": "오메가3",
+    "r": 1
+   },
+   {
+    "k": "젖산마그네슘",
+    "r": 2
+   },
+   {
+    "k": "마그네슘",
+    "r": 3
+   },
+   {
+    "k": "유산균",
+    "r": 4
+   },
+   {
+    "k": "비타민C",
+    "r": 5
+   },
+   {
+    "k": "매스틱",
+    "r": 6
+   },
+   {
+    "k": "콘드로이친",
+    "r": 7
+   },
+   {
+    "k": "멜라토닌",
+    "r": 8
+   },
+   {
+    "k": "뉴케어구수한맛",
+    "r": 9
+   },
+   {
+    "k": "비타민D",
+    "r": 10
+   },
+   {
+    "k": "베르베린",
+    "r": 11
+   },
+   {
+    "k": "포스파티딜세린",
+    "r": 12
+   },
+   {
+    "k": "뉴케어",
+    "r": 13
+   },
+   {
+    "k": "하스카프베리",
+    "r": 14
+   },
+   {
+    "k": "카무트효소",
+    "r": 15
+   },
+   {
+    "k": "루테인",
+    "r": 16
+   },
+   {
+    "k": "삼백초",
+    "r": 17
+   },
+   {
+    "k": "캡슐레이션효소",
+    "r": 18
+   },
+   {
+    "k": "커큐민",
+    "r": 19
+   },
+   {
+    "k": "NMN",
+    "r": 20
+   }
+  ],
+  "products": {
+   "naver": [
+    {
+     "name": "[4박스] 여에스더 멀티비타민&리포좀 비타민B",
+     "r": 1
+    },
+    {
+     "name": "테라랩 피엠시톨 복합비타민 10중 기능성",
+     "r": 2
+    },
+    {
+     "name": "오쏘몰 이뭄 멀티비타민 30일분 + 바이탈M 7일분",
+     "r": 3
+    },
+    {
+     "name": "리노브 액티바이타 비타민믹스 바나나맛 6개월분",
+     "r": 4
+    },
+    {
+     "name": "데이팩 필수성분 올인원 종합영양제 3개월",
+     "r": 5
+    }
+   ],
+   "coupang": [
+    {
+     "name": "종근당건강 프로메가 오메가3 트리플 60정",
+     "r": 1
+    },
+    {
+     "name": "고려은단 비타민C 1000 180정",
+     "r": 2
+    },
+    {
+     "name": "종근당 칼슘앤마그네슘 비타민D 아연 180정",
+     "r": 3
+    },
+    {
+     "name": "메가도스 비타민C 3000mg 180g",
+     "r": 4
+    },
+    {
+     "name": "나우푸드 마그네슘 글리시네이트 180정",
+     "r": 5
+    },
+    {
+     "name": "메가도스 비타민C 3000mg 2개",
+     "r": 6
+    },
+    {
+     "name": "락토핏 골드 80포",
+     "r": 7
+    },
+    {
+     "name": "뉴트리코스트 크레아틴 분말 300g",
+     "r": 8
+    },
+    {
+     "name": "덴프스 덴마크 유산균이야기 30정 2개",
+     "r": 9
+    },
+    {
+     "name": "자로우 포뮬러스 도피러스 EPS 유산균 120정",
+     "r": 10
+    }
+   ]
+  }
+ }
+}
